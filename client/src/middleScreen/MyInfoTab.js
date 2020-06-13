@@ -9,7 +9,7 @@ class MyInfoTab extends Component {
                 <div className="d-flex flex-row justify-content-around">
                     <div className="d-flex flex-column">
                         <div className="d-flex flex-row info-tab-row">
-                            <span className="info-tab-label">Pseudo: </span>
+                            <span className="info-tab-label">Nom: </span>
                             <span
                                 className="flex-fill">{this.props.store.getPlayer.username} - ({this.props.store.playerIndex + 1})</span>
                         </div>

@@ -56,7 +56,7 @@ class TradesTab extends Component {
             return (
                 <div className="d-flex flex-row justify-content-around">
                     <div className="d-flex flex-column text-center">
-                        <u>Trades:</u>
+                        <u>Échanges:</u>
                         <ul ref="trades" className="list-group pending-trades">
                             {this.props.store.game.trades.map((trade, i) => ({
                                 ...trade,
@@ -66,7 +66,7 @@ class TradesTab extends Component {
                                     <li key={i}
                                         onClick={() => this.setState({selectedTrade: trade.index})}
                                         className={`list-group-item list-group-item-action ${trade.index === this.state.selectedTrade ? "active" : ""}`}>
-                                        From {this.props.store.game.player_info[trade.initiating_player].username}
+                                        De {this.props.store.game.player_info[trade.initiating_player].username}
                                     </li>
                                 )
                             })}

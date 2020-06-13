@@ -51,7 +51,7 @@ class Actions extends Component {
                             </button>
                             <button type="button" className="btn btn-primary reject-buy-tile-button"
                                     onClick={this.props.store.rejectBuyTile}>
-                                Rejeter
+                                Non
                             </button>
                         </div>
                     </div>

@@ -453,33 +453,33 @@ module.exports = {
     ],
     chance: [
         {
-            name: "Advance to 'Go' (Collect $200).",
+            name: "Va à la case départ (Gagne $200).",
             type: "simple_move",
             position: 0
         },
         {
-            name: "Advance to Twilio.",
+            name: "Va voir Camélia.",
             type: "simple_move",
             position: 24
         },
         {
-            name: "Advance to Dropbox.",
+            name: "Va voir Pierre, il fait un malaise..",
             type: "simple_move",
             position: 11,
             //if you pass Go
         },
         {
-            name: "Advance Token to nearest Musk company.",
+            name: "Rejoint Milas",
             type: "nearest_utility",
             extra: "no_go",
             //either tesla or spacex
         },
         {
-            name: "Advance Token to the nearest Big Four and pay owner twice the rental to which they are otherwise entitled. If the railroad is unowned, you may buy it from the Bank.",
+            name: "Avancez à la prochaine bgette, si elle n'est pas prise, vous pouvez l'acheter !",
             type: "nearest_rr",
         },
         {
-            name: "The Stock Market is up today. Collect $50.",
+            name: "Ouverture de la Fata ! + $50.",
             type: "simple_bank_pay",
             amount: 50,
         },
@@ -488,7 +488,7 @@ module.exports = {
         //     type: "chance"
         // },
         {
-            name: "Go Back Three Spaces.",
+            name: "Reculez de 3 cases.",
             type: "move_amount",
             amount: -3,
 
@@ -502,54 +502,54 @@ module.exports = {
         //     type: "chance"
         // },
         {
-            name: "Please pay $15 for your stock processing fee.",
+            name: "Payez 15$ pour éviter une colle avec Soudan",
             type: "simple_bank_pay",
             amount: -15,
         },
         {
-            name: "Take a tour of Microsoft. If you pass 'GO', collect $200",
+            name: "Allez voir cette bgette de Marion",
             type: "simple_move",
             position: 5
         },
         {
-            name: "Take a walk to Salesforce.",
+            name: "Souveton à quelque chose à vous dire",
             type: "simple_move",
             position: 39
         },
         {
-            name: "You have been elected Chairman of the Board. Pay each player $50.",
+            name: "Vous avez tricher aux formules trigos. Payez à tous $50.",
             type: "pay_all_players",
             amount: 50,
         },
         {
-            name: "Your building and loan matures. Collect $150.",
+            name: "Vous avez colle avec Brabant, + $150.",
             type: "simple_bank_pay",
             amount: 150,
         },
         {
-            name: "You have won a hackathon. Collect $100",
+            name: "CHICKEN BURGER ! +$100",
             type: "simple_bank_pay",
             amount: 100,
         },
     ],
     chest: [
         {
-            name: "Advance to 'GO'. Collect $200",
+            name: "Reviens au départ et gagne $200",
             type: "simple_move",
             position: 0,
         },
         {
-            name: "Bank error in your favor. Collect $200",
+            name: "Tu as réussi un exo de souveton, + $200",
             type: "simple_bank_pay",
             amount: 200,
         },
         {
-            name: "Doctor's fee. Pay $50",
+            name: "Tu dois payer la cantine... - $50",
             type: "simple_bank_pay",
             amount: -50,
         },
         {
-            name: "From sale of stock you get $50",
+            name: "Tu as survécu une heure avec OCF, +$50",
             type: "simple_bank_pay",
             amount: 50,
         },
@@ -558,26 +558,26 @@ module.exports = {
         //     type: "chest"
         // },
         {
-            name: "Go to Jail",
+            name: "Colle avec melissa ...",
             type: "go_to_jail"
         },
         {
-            name: "Grand Opera Night - All players with Venmo you $50.",
+            name: "Tu t'es endormi en Français... -$50.",
             type: "pay_all_players",
             amount: -50,
         },
         {
-            name: "Holiday Fund Matures - Receive $100",
+            name: "Tu as réussi à tenir 2 h sans te faire prendre par Chemimi, +$100",
             type: "simple_bank_pay",
             amount: 100,
         },
         {
-            name: "Income tax refund - Collect $20",
+            name: "Tu as survécu une heure avec Delcroix $20",
             type: "simple_bank_pay",
             amount: 20,
         },
         {
-            name: "It's your Birthday! - Collect $10",
+            name: "C'est le Zinzin ! Voici $10",
             type: "simple_bank_pay",
             amount: 10,
         },

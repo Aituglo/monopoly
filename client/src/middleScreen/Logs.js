@@ -17,7 +17,7 @@ class Logs extends Component {
         return (
             <div ref="logs" className="logs-tab">
                 {this.props.store.game.logs.length === 0 && (
-                    <div>No actions yet...</div>
+                    <div>Pas d'actions...</div>
                 )}
                 {this.props.store.game.logs.map((log, i) => {
                     let date = new Date(log.time).toLocaleString();

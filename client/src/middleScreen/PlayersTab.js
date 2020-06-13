@@ -8,7 +8,7 @@ class PlayersTab extends Component {
                 <div className="d-flex flex-row justify-content-around">
                     <div className="d-flex flex-column">
                         <div className="d-flex flex-row info-tab-row">
-                            <span className="info-tab-label">Pseudo: </span>
+                            <span className="info-tab-label">Nom: </span>
                             <span
                                 className="flex-fill">{this.props.store.game.player_info[this.props.player].username} - ({this.props.player + 1})</span>
                         </div>
@@ -29,12 +29,12 @@ class PlayersTab extends Component {
                                 className="flex-fill">${this.props.store.game.player_info[this.props.player].money}</span>
                         </div>
                         <div className="d-flex flex-row info-tab-row">
-                            <span className="info-tab-label">Valeur nette: </span>
+                            <span className="info-tab-label">Net: </span>
                             <span
                                 className="flex-fill">${this.props.store.netWorthOfPlayer(this.props.player)}</span>
                         </div>
                         <div className="d-flex flex-row info-tab-row">
-                            <span className="info-tab-label">Liquid Worth: </span>
+                            <span className="info-tab-label">Liquide: </span>
                             <span
                                 className="flex-fill">${this.props.store.liquidWorthofPlayer(this.props.player)}</span>
                         </div>
@@ -44,7 +44,7 @@ class PlayersTab extends Component {
                     <button onClick={() => this.props.selectTab({selectedTab: "player_trade"})} type="button"
                             className="btn btn-primary"
                             disabled={this.props.store.getPlayer.state === "NOT_TURN"}>
-                        Trade
+                        Échange
                     </button>
                 </div>
                 <div

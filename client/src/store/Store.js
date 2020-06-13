@@ -140,7 +140,7 @@ class Store {
         const trade = this.game.trades[tradeIndex];
         this.mergeTradeData(tradeIndex);
         this.game.trades[tradeIndex].state = "ACCEPTED";
-        this.addToLog(`${this.game.player_info[trade.trading_player].username} accepted a trade from ${this.game.player_info[trade.initiating_player].username}`);
+        this.addToLog(`${this.game.player_info[trade.trading_player].username} a accepté un échange de ${this.game.player_info[trade.initiating_player].username}`);
         this.socket.emit("accept_trade", {
             game_id: this.gameAuthInfo.game_id,
             trade_index: tradeIndex,
@@ -151,7 +151,7 @@ class Store {
     rejectTrade = (tradeIndex) => {
         const trade = this.game.trades[tradeIndex];
         this.game.trades[tradeIndex].state = "REJECTED";
-        this.addToLog(`${this.game.player_info[trade.trading_player].username} rejected a trade from ${this.game.player_info[trade.initiating_player].username}`);
+        this.addToLog(`${this.game.player_info[trade.trading_player].username} a rejeté un échange de ${this.game.player_info[trade.initiating_player].username}`);
         this.socket.emit("reject_trade", {
             game_id: this.gameAuthInfo.game_id,
             trade_index: tradeIndex,
@@ -160,7 +160,7 @@ class Store {
     cancelTrade = (tradeIndex) => {
         const trade = this.game.trades[tradeIndex];
         this.game.trades[tradeIndex].state = "CANCELED";
-        this.addToLog(`${this.game.player_info[trade.initiating_player].username} canceled a trade to ${this.game.player_info[trade.trading_player].username}`);
+        this.addToLog(`${this.game.player_info[trade.initiating_player].username} a annulé un échange de ${this.game.player_info[trade.trading_player].username}`);
         this.socket.emit("cancel_trade", {
             game_id: this.gameAuthInfo.game_id,
             trade_index: tradeIndex,
@@ -168,7 +168,7 @@ class Store {
     };
     giveUp = () => {
         const playerIndex = this.playerIndex;
-        this.addToLog(`${this.game.player_info[playerIndex].username} gave up.`);
+        this.addToLog(`${this.game.player_info[playerIndex].username} a arrêté.`);
         let newCurrentPlayer = this.findNextPlayerInGame(playerIndex);
         this.game.player_info[playerIndex].state = "OUT";
         if (this.game.player_info.filter(player => player.state !== "OUT").length === 1) {
@@ -213,7 +213,7 @@ class Store {
             taken_money: takenMoney,
             state: "PROPOSED",
         };
-        this.addToLog(`${this.game.player_info[initiatingPlayer].username} initiated a trade with ${this.game.player_info[tradingPlayer].username}`);
+        this.addToLog(`${this.game.player_info[initiatingPlayer].username} a commencé un échange avec ${this.game.player_info[tradingPlayer].username}`);
         this.game.trades.push(trade);
         this.socket.emit("create_trade", {
             game_id: this.gameAuthInfo.game_id,
@@ -224,7 +224,7 @@ class Store {
         const receivingPlayer = this.playerTile.player;
         const givingPlayer = this.playerIndex;
         const rent = this.calcRentCostTile(this.game.player_info[givingPlayer].position, false);
-        this.addToLog(`${this.getPlayer.username} paid ${this.game.player_info[receivingPlayer].username} $${rent} for visiting ${this.playerTile.name}.`);
+        this.addToLog(`${this.getPlayer.username} paye ${this.game.player_info[receivingPlayer].username} $${rent} pour avoir visité ${this.playerTile.name}.`);
         this.game.player_info[receivingPlayer].money += rent * this.getPlayer.pay_multiplier;
         this.game.player_info[givingPlayer].money -= rent * this.getPlayer.pay_multiplier;
         this.game.player_info[givingPlayer].pay_multiplier = 1;
@@ -257,7 +257,7 @@ class Store {
         if (this.getPlayer.jail_state) {
             return;
         }
-        this.addToLog(`${this.getPlayer.username} rolled a ${this.diceSum} (${this.getPlayer.dice[0]} - ${this.getPlayer.dice[1]}) and is now at ${tile.name}.`);
+        this.addToLog(`${this.getPlayer.username} a fait ${this.diceSum} (${this.getPlayer.dice[0]} - ${this.getPlayer.dice[1]}) et il est chez ${tile.name}.`);
         this.checkIfPlayerPassedGo();
         if (tile.owned && tile.player !== playerIndex) {
             this.payPlayer();
@@ -282,7 +282,7 @@ class Store {
             this.game.player_info[playerIndex].doubles_rolled = 0;
             this.updatePlayerDoublesRolled(playerIndex);
             this.goToJail(playerIndex);
-            this.addToLog(`${this.getPlayer.username} is going to jail :(`);
+            this.addToLog(`${this.getPlayer.username} a colle avec melissa :(`);
         } else {
             if (this.getPlayer.dice[0] === this.getPlayer.dice[1]) {
                 this.setPlayerState("START_TURN");
@@ -329,7 +329,7 @@ class Store {
             this.game.last_chest_card = newCardIndex;
             newCard = this.game.chest[newCardIndex];
         }
-        this.addToLog(`${this.getPlayer.username} picked a card: ${newCard.name}`);
+        this.addToLog(`${this.getPlayer.username} a pris: ${newCard.name}`);
         if (newCard.type === "simple_move") {
             if (newCard.position === 0) {
                 this.playerPassedGoMoneyIncrease();
@@ -431,7 +431,7 @@ class Store {
         const playerIndex = this.playerIndex;
         this.game.player_info[playerIndex].money -= 75;
         this.updatePlayerMoney(playerIndex);
-        this.addToLog(`${this.getPlayer.username} paid $75 for tax evasion :O`);
+        this.addToLog(`${this.getPlayer.username} paye $75 pour s'enfuir de colle :O`);
         if (this.getPlayer.dice[0] === this.getPlayer.dice[1]) {
             this.setPlayerState("START_TURN");
         } else {
@@ -443,7 +443,7 @@ class Store {
         const playerIndex = this.playerIndex;
         this.game.player_info[playerIndex].money -= Math.ceil(this.netWorth * .10);
         this.updatePlayerMoney(playerIndex);
-        this.addToLog(`${this.getPlayer.username} chose to pay 10% of their net worth (${Math.ceil(this.netWorth * .10)}).`);
+        this.addToLog(`${this.getPlayer.username} choisi de payer 10% de son revenu net (${Math.ceil(this.netWorth * .10)}).`);
         if (this.getPlayer.dice[0] === this.getPlayer.dice[1]) {
             this.setPlayerState("START_TURN");
         } else {
@@ -455,7 +455,7 @@ class Store {
         const playerIndex = this.playerIndex;
         this.game.player_info[playerIndex].money -= 200;
         this.updatePlayerMoney(playerIndex);
-        this.addToLog(`${this.getPlayer.username} chose to pay $200 dollars.`);
+        this.addToLog(`${this.getPlayer.username} choisi de payer $200 dollars.`);
         if (this.getPlayer.dice[0] === this.getPlayer.dice[1]) {
             this.setPlayerState("START_TURN");
         } else {
@@ -495,7 +495,7 @@ class Store {
     playerPassedGoMoneyIncrease = () => {
         const playerIndex = this.playerIndex;
         this.game.player_info[playerIndex].money += 200;
-        this.addToLog(`${this.getPlayer.username} passed GO and earned $200!`);
+        this.addToLog(`${this.getPlayer.username} passe GO et gagne $200!`);
         this.socket.emit("update_player_money", {
             game_id: this.gameAuthInfo.game_id,
             player_money: this.game.player_info[playerIndex].money,
@@ -528,7 +528,7 @@ class Store {
         this.game.player_info[playerIndex].money -= this.game.board[this.getPlayer.position].cost;
         this.game.board[this.getPlayer.position].owned = true;
         this.game.board[this.getPlayer.position].player = playerIndex;
-        this.addToLog(`${this.getPlayer.username} bought ${this.playerTile.name} for $${this.playerTile.cost}.`);
+        this.addToLog(`${this.getPlayer.username} achète ${this.playerTile.name} pour $${this.playerTile.cost}.`);
         this.socket.emit("buy_tile", {
             game_id: this.gameAuthInfo.game_id,
             tile_index: this.getPlayer.position,
@@ -544,7 +544,7 @@ class Store {
         this.syncPlayerState();
     };
     rejectBuyTile = () => {
-        this.addToLog(`${this.getPlayer.username} refused to buy ${this.playerTile.name}. Going to auction.`);
+        this.addToLog(`${this.getPlayer.username} refuse de payer ${this.playerTile.name}. Enchères.`);
         if (this.getPlayer.dice[0] === this.getPlayer.dice[1]) {
             this.setPlayerState("START_TURN");
         } else {
@@ -871,12 +871,12 @@ class Store {
             let ownsAll = this.game.board.filter(el => el.group === tile.group && el.player !== tile.player).length === 0;
             if (!ownsAll) {
                 if (preDiceRoll) {
-                    return "Dice×4";
+                    return "Dé×4";
                 }
                 return this.diceSum * 4;
             } else {
                 if (preDiceRoll) {
-                    return "Dice×10";
+                    return "Dé×10";
                 }
                 return this.diceSum * 10;
             }

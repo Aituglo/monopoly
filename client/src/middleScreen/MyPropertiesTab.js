@@ -10,10 +10,10 @@ class MyPropertiesTab extends Component {
                     <thead>
                     <tr>
                         <th/>
-                        <th className="text-center" scope="col">Name</th>
-                        <th className="text-center" scope="col">Rent</th>
-                        <th className="text-center" scope="col">Upgrade</th>
-                        <th className="text-center" scope="col">Mortgaged?</th>
+                        <th className="text-center" scope="col">Nom</th>
+                        <th className="text-center" scope="col">Loyer</th>
+                        <th className="text-center" scope="col">Améliorations</th>
+                        <th className="text-center" scope="col">Hypothéqué?</th>
                     </tr>
                     </thead>
                     <tbody className="">

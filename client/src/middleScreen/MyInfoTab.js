@@ -32,7 +32,7 @@ class MyInfoTab extends Component {
                             <span className="flex-fill">${this.props.store.netWorth}</span>
                         </div>
                         <div className="d-flex flex-row info-tab-row">
-                            <span className="info-tab-label">Liquide: </span>
+                            <span className="info-tab-label">Possible: </span>
                             <span className="flex-fill">${this.props.store.liquidWorth}</span>
                         </div>
                     </div>

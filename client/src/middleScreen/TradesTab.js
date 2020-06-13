@@ -77,7 +77,7 @@ class TradesTab extends Component {
                             <div className="d-flex flex-row justify-content-around main-trade-content">
                                 <div className="d-flex flex-column text-center trade-view-left">
                                     <div className="trade-money-label">
-                                        <u>{areYouInitiating ? `You give to ${tradingPlayer.username}` : `You give to ${initiatingPlayer.username}`}</u>
+                                        <u>{areYouInitiating ? `Vous donnez à ${tradingPlayer.username}` : `Vous donnez à ${initiatingPlayer.username}`}</u>
                                     </div>
                                     <div className="input-group">
                                         <div className="input-group-prepend">
@@ -106,7 +106,7 @@ class TradesTab extends Component {
                                 </div>
                                 <div className="d-flex flex-column text-center trade-view-right">
                                     <div className="trade-money-label">
-                                        <u>{areYouInitiating ? `You get from ${tradingPlayer.username}` : `You get from ${initiatingPlayer.username}`}</u>
+                                        <u>{areYouInitiating ? `Vous gagnez de ${tradingPlayer.username}` : `Vous gagnez de ${initiatingPlayer.username}`}</u>
                                     </div>
                                     <div className="input-group">
                                         <div className="input-group-prepend">
@@ -157,7 +157,7 @@ class TradesTab extends Component {
                                         this.refs.trades.scrollTop = 0;
                                     }}
                                     type="button"
-                                    className="btn btn-primary">{`${playerIndex !== this.props.store.game.trades[this.state.selectedTrade].initiating_player ? "Reject Trade" : "Cancel Trade"}`}
+                                    className="btn btn-primary">{`${playerIndex !== this.props.store.game.trades[this.state.selectedTrade].initiating_player ? "Rejeter" : "Annuler"}`}
                                 </button>
                             </div>
                         </div>

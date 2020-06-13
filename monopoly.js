@@ -227,7 +227,7 @@ module.exports = {
         },
         {
             //Free Parking
-            name: "PTO",
+            name: "Parking",
             position: 20,
             type: "parking",
             url: "images/parking.png"
@@ -331,7 +331,7 @@ module.exports = {
         },
         {
             //Atlantic Avenue
-            name: "Paul Pottier",
+            name: "Paul Macrez",
             cost: 260,
             upgrade: 150,
             position: 26,
@@ -613,13 +613,13 @@ module.exports = {
         },
     ],
     colors: [
-        "#F47983",
-        "#BE90D4",
-        "#59ABE3",
-        "#87D37C",
-        "#F5D76E",
-        "#ca865c",
-        "#6C7A89",
+        "#2550fa",
+        "#de0000",
+        "#d4e305",
+        "#05b3e3",
+        "#e36d05",
+        "#05e35e",
+        "#e3058a",
     ]
 
 };

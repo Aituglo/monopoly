@@ -88,23 +88,23 @@ class MousedOverTileTab extends Component {
                                         <div>${tile.upgrade}</div>
                                     </div>
                                     <div className="d-flex justify-content-between">
-                                        <div>1st Round:</div>
+                                        <div>1ère Maison:</div>
                                         <div>${tile.rent[1]}</div>
                                     </div>
                                     <div className="d-flex justify-content-between">
-                                        <div>2nd Round:</div>
+                                        <div>2ème Maison:</div>
                                         <div>${tile.rent[2]}</div>
                                     </div>
                                     <div className="d-flex justify-content-between">
-                                        <div>3rd Round:</div>
+                                        <div>3ème Maison:</div>
                                         <div>${tile.rent[3]}</div>
                                     </div>
                                     <div className="d-flex justify-content-between">
-                                        <div>4th Round:</div>
+                                        <div>4ère Maison:</div>
                                         <div>${tile.rent[4]}</div>
                                     </div>
                                     <div className="d-flex justify-content-between">
-                                        <div>5th Round:</div>
+                                        <div>Hotel:</div>
                                         <div>${tile.rent[5]}</div>
                                     </div>
                                 </div>

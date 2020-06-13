@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import {ToastContainer, toast} from 'react-toastify';
 
-const URL = process.env.REACT_APP_URL || "https://monopoly.aituglo.com";
+const URL = process.env.REACT_APP_URL || "https://monopoly.cassimkhouani.com";
 
 class NewGame extends Component {
     state = {

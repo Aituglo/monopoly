@@ -601,17 +601,13 @@ module.exports = {
             type: "simple_bank_pay",
             amount: 25,
         },
-        // {
-        //     name: "You are assessed for street repairs - $40 per house - $115 per hotel",
-        //     type: "chest"
-        // },
         {
-            name: "You have won fourth prize in a beauty contest - Collect $10",
+            name: "T'as de plus belles fesses que Melissa, tu gagnes $10",
             type: "simple_bank_pay",
             amount: 10,
         },
         {
-            name: "You inherit $100",
+            name: "Vous gagnez $100",
             type: "simple_bank_pay",
             amount: 100,
         },

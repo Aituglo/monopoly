@@ -1,0 +1,1 @@
+docker run --name mongo -p 27017:27017 --rm -it -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root -v ${PWD}/mongo-scripts/:/docker-entrypoint-initdb.d/ mongo mongod --auth

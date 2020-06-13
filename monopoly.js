@@ -582,22 +582,22 @@ module.exports = {
             amount: 10,
         },
         {
-            name: "Life insurance matures - Collect $100",
+            name: "Tu as gérer avec Souveton, tu gagnes $100",
             type: "simple_bank_pay",
             amount: 100,
         },
         {
-            name: "Pay hospital fees of $100",
+            name: "Tu viens de rater ta colle ... -$100",
             type: "simple_bank_pay",
             amount: -100,
         },
         {
-            name: "Pay school fees of $150",
+            name: "Tu dois payer l'internat $150",
             type: "simple_bank_pay",
             amount: -150,
         },
         {
-            name: "Receive $25 consultancy fee",
+            name: "Tu reçois $25 pour avoir supporter Delcroix",
             type: "simple_bank_pay",
             amount: 25,
         },

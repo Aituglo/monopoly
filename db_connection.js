@@ -5,6 +5,6 @@ const {DB_URL} = require('./secrets');
 const client = MongoClient.connect(DB_URL, {useNewUrlParser: true});
 module.exports =
     client.then((db) => {
-        return db.db("techopoly").collection("techopoly");
+        return db.db("heroku_60n00cpz").collection("techopoly");
     })
 ;

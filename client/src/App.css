@@ -144,53 +144,65 @@ body, html {
 
 .top-tiles-upgrade-bar {
     position: absolute;
-    bottom: -3px;
-    left: -1px;
+    bottom: 0px;
+    left: 0px;
     width: 70px;
-    height: 3px;
+    height: 15px;
 }
 
 .top-tiles-upgrade-bar-component {
-    width: 14px;
+    width: 15px;
+    border-radius: 50%;
+    border: 4px #ffffff solid;
+    display: flex;
     filter: invert(100%);
 }
 
 .bottom-tiles-upgrade-bar {
     position: absolute;
-    top: -3px;
-    left: -1px;
+    top: 0px;
+    left: 0px;
     width: 70px;
-    height: 3px;
+    height: 15px;
 }
 
 .bottom-tiles-upgrade-bar-component {
-    width: 14px;
+    width: 15px;
+    border-radius: 50%;
+    border: 4px #ffffff solid;
+    display: flex;
     filter: invert(100%);
 }
 
 .left-tiles-upgrade-bar {
     position: absolute;
     top: 0;
-    right: -3px;
+    right: 0px;
     height: 70px;
-    width: 3px;
+    width: 15px;
 }
 
 .left-tiles-upgrade-bar-component {
-    height: 14px;
+    height: 15px;
+    border-radius: 50%;
+    border: 4px #ffffff solid;
+    display: flex;
     filter: invert(100%);
 }
 
 .right-tiles-upgrade-bar {
     position: absolute;
-    top: 0;
-    left: -3px;
+    top: 0px;
+    left: 0px;
     height: 70px;
-    width: 3px;
+    width: 15px;
 }
 
 .right-tiles-upgrade-bar-component {
-    height: 14px;
+    height: 15px;
+    border-radius: 50%;
+    border: 4px #ffffff solid;
+    display: flex;
     filter: invert(100%);
 }
 
@@ -476,14 +488,16 @@ body, html {
     margin: 30px auto auto auto;
 }
 
-.new-game-main {
-    padding: 20px;
-}
-
 .tile-identifier {
     position: absolute;
     width: 50px;
     height: 10px;
     background-color: orange;
     z-index: 1000;
+}
+.center{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

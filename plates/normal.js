@@ -9,7 +9,7 @@ module.exports = {
         },
         {
             //Mediterranean Avenue
-            name: "Rambouille",
+            name: "Visa",
             cost: 60,
             upgrade: 50,
             position: 1,
@@ -18,19 +18,19 @@ module.exports = {
                 2, 10, 30, 90, 160, 250,
             ],
             type: "property",
-            url: "images/rambouille.jpg",
+            url: "https://i.imgur.com/TBCSxks.png",
             color: "#5E3C9F",
         },
         {
             //Community Chest
-            name: "Caisse de Communauté",
+            name: "Stock Options",
             position: 2,
             type: "chance",
-            url: "images/commu.png"
+            url: "https://i.imgur.com/AC8HcoD.jpg"
         },
         {
             //Baltic Ave
-            name: "Bryan",
+            name: "Capital One",
             cost: 60,
             upgrade: 50,
             position: 3,
@@ -39,29 +39,29 @@ module.exports = {
                 4, 20, 60, 180, 320, 450,
             ],
             type: "property",
-            url: "images/bryan.jpg",
+            url: "https://i.imgur.com/1bII4bF.jpg",
             color: "#5E3C9F",
         },
         {
             //Income Tax
-            name: "Taxe",
+            name: "Tax",
             position: 4,
             type: "income-tax",
             url: "https://i.imgur.com/1E3cLRO.png"
         },
         {
             //Reading Railroad
-            name: "Marion",
+            name: "Microsoft",
             cost: 200,
             base_rent: 25,
             position: 5,
             type: "rr",
-            url: "images/marion.jpg",
+            url: "https://i.imgur.com/9k7grnv.png",
             color: "#8B4513",
         },
         {
             //Connecticut Avenue
-            name: "Baptiste",
+            name: "Doordash",
             cost: 120,
             upgrade: 50,
             position: 9,
@@ -70,19 +70,19 @@ module.exports = {
                 6, 30, 90, 270, 400, 550,
             ],
             type: "property",
-            url: "images/baptiste.jpg",
+            url: "https://i.imgur.com/x1zQhTY.png",
             color: "#9eeafb"
         },
         {
             //Chance
-            name: "Chance",
+            name: "Equity",
             position: 7,
             type: "chance",
-            url: "images/chance.png"
+            url: "https://i.imgur.com/tXYApWB.png"
         },
         {
             //Vermont Avenue
-            name: "Victor",
+            name: "Reddit",
             cost: 100,
             upgrade: 50,
             position: 8,
@@ -91,12 +91,12 @@ module.exports = {
                 6, 30, 90, 270, 400, 550,
             ],
             type: "property",
-            url: "images/victor.jpg",
+            url: "https://i.imgur.com/ry3ru3l.png",
             color: "#9eeafb"
         },
         {
             //Oriental Ave
-            name: "Gauthier",
+            name: "Robinhood",
             cost: 100,
             upgrade: 50,
             position: 6,
@@ -105,18 +105,18 @@ module.exports = {
                 8, 40, 100, 300, 450, 600,
             ],
             type: "property",
-            url: "images/gauthier.jpg",
+            url: "https://i.imgur.com/FO48Ffj.jpg",
             color: "#9eeafb"
         },
         {
-            name: "Colle avec Melissa",
+            name: "Jail",
             position: 10,
             type: "jail",
-            url: "http://melissa.inglart.free.fr/CV/photoID.jpg"
+            url: "https://i.imgur.com/UjkDuYN.jpg"
         },
         {
             //St Charles Place
-            name: "Pierre",
+            name: "Dropbox",
             cost: 140,
             upgrade: 100,
             position: 11,
@@ -125,22 +125,22 @@ module.exports = {
                 10, 50, 150, 450, 625, 750,
             ],
             type: "property",
-            url: "images/pierre.jpg",
+            url: "https://i.imgur.com/Lckj4pJ.jpg",
             color: "#D13F9B",
         },
         {
             //Electric Company
-            name: "Romain",
+            name: "PayPal",
             cost: 150,
             position: 12,
             group: "utility",
             type: "utility",
-            url: "images/romain.jpg",
+            url: "https://i.imgur.com/lMbhkCW.png",
             color: "#FBB677"
         },
         {
             //States Avenue
-            name: "Nasrédine",
+            name: "Box",
             cost: 140,
             upgrade: 100,
             position: 13,
@@ -149,12 +149,12 @@ module.exports = {
                 10, 50, 150, 450, 625, 750,
             ],
             type: "property",
-            url: "images/nas.jpg",
+            url: "https://i.imgur.com/24T8C2W.png",
             color: "#D13F9B",
         },
         {
             //Virginia Avenue
-            name: "Louis",
+            name: "Slack",
             cost: 160,
             upgrade: 100,
             position: 14,
@@ -163,22 +163,22 @@ module.exports = {
                 12, 60, 180, 500, 700, 900,
             ],
             type: "property",
-            url: "images/louis.jpg",
+            url: "https://i.imgur.com/0sLIAPw.png",
             color: "#D13F9B",
         },
         {
             //Pennsylvania Railroad
-            name: "Kelly",
+            name: "Facebook",
             cost: 200,
             base_rent: 25,
             position: 15,
             type: "rr",
-            url: "images/kelly.jpg",
+            url: "https://i.imgur.com/Gahoxm2.png",
             color: "#8B4513",
         },
         {
             //Tennessee Avenue
-            name: "Margaux",
+            name: "Youtube",
             cost: 180,
             upgrade: 100,
             position: 18,
@@ -187,19 +187,19 @@ module.exports = {
                 14, 70, 200, 550, 750, 950,
             ],
             type: "property",
-            url: "images/margaux.jpg",
+            url: "https://i.imgur.com/vYQZRaG.png",
             color: "#FFA500",
         },
         {
             //Community Chest
-            name: "Caisse de Communauté",
+            name: "Stock Options",
             position: 17,
             type: "chest",
-            url: "images/commu.png"
+            url: "https://i.imgur.com/AC8HcoD.jpg"
         },
         {
             //St James Place
-            name: "Céline",
+            name: "Twitch",
             cost: 180,
             upgrade: 100,
             position: 16,
@@ -208,12 +208,12 @@ module.exports = {
                 14, 70, 200, 550, 750, 950,
             ],
             type: "property",
-            url: "images/celine.jpg",
+            url: "https://i.imgur.com/Bexjmxs.png",
             color: "#FFA500",
         },
         {
             //New York Avenue
-            name: "Manon M",
+            name: "Netflix",
             cost: 200,
             upgrade: 100,
             position: 19,
@@ -222,19 +222,19 @@ module.exports = {
                 16, 80, 220, 600, 800, 1000,
             ],
             type: "property",
-            url: "images/manonm.jpg",
+            url: "https://i.imgur.com/5jhWhOw.jpg",
             color: "#FFA500",
         },
         {
             //Free Parking
-            name: "Parking",
+            name: "PTO",
             position: 20,
             type: "parking",
-            url: "images/parking.png"
+            url: "https://i.imgur.com/fztIAxy.png"
         },
         {
             //Kentucky Avenue
-            name: "Lou-anne",
+            name: "Square",
             cost: 220,
             upgrade: 150,
             position: 21,
@@ -243,19 +243,19 @@ module.exports = {
                 18, 90, 250, 700, 875, 1050,
             ],
             type: "property",
-            url: "images/loulou.jpg",
+            url: "https://i.imgur.com/r5SJs2y.jpg",
             color: "#ff3f3f"
         },
         {
             //Chance
-            name: "Chance",
+            name: "Equity",
             position: 22,
             type: "chance",
-            url: "images/chance.png"
+            url: "https://i.imgur.com/tXYApWB.png"
         },
         {
             //Indiana Avenue
-            name: "Alexis",
+            name: "Atlassian",
             cost: 220,
             upgrade: 150,
             position: 23,
@@ -264,12 +264,12 @@ module.exports = {
                 18, 90, 250, 700, 875, 1050,
             ],
             type: "property",
-            url: "images/alexis.jpg",
+            url: "https://i.imgur.com/z1A2ds5.png",
             color: "#ff3f3f"
         },
         {
             //Illinois Avenue
-            name: "Camélia",
+            name: "Twilio",
             cost: 240,
             upgrade: 150,
             position: 24,
@@ -278,22 +278,35 @@ module.exports = {
                 20, 100, 300, 750, 925, 1100,
             ],
             type: "property",
-            url: "images/camelia.jpg",
+            url: "https://i.imgur.com/YYMNfE9.png",
             color: "#ff3f3f"
         },
         {
             //B&0 Railroad
-            name: "Léa",
+            name: "Amazon",
             cost: 200,
             base_rent: 25,
             position: 25,
             type: "rr",
-            url: "images/lea.jpg",
+            url: "https://i.imgur.com/0NjxZUM.png",
             color: "#8B4513",
         },
+        // {
+        //     //Atlantic Avenue
+        //     name: "LinkedIn",
+        //     cost: 260,
+        //     upgrade: 150,
+        //     position: 26,
+        //     group: "yellow",
+        //     rent: [
+        //         22, 110, 330, 800, 975, 1150,
+        //     ],
+        //     type: "property",
+        //     url: "https://icons-for-free.com/free-icons/png/512/272550.png",
+        // },
         {
             //Ventnor Avenue
-            name: "Jimmy",
+            name: "Instagram",
             cost: 260,
             upgrade: 150,
             position: 27,
@@ -302,12 +315,12 @@ module.exports = {
                 22, 110, 330, 800, 975, 1150,
             ],
             type: "property",
-            url: "images/jimmy.jpg",
+            url: "https://i.imgur.com/Hx9qvk6.png?1",
             color: "#fff852"
         },
         {
             //Marvin Gardens
-            name: "Sebastien",
+            name: "Snapchat",
             cost: 280,
             upgrade: 150,
             position: 29,
@@ -316,22 +329,22 @@ module.exports = {
                 22, 110, 330, 800, 975, 1150,
             ],
             type: "property",
-            url: "images/sebastien.jpg",
+            url: "https://i.imgur.com/fweXMJx.jpg",
             color: "#fff852"
         },
         {
             //Water Works
-            name: "Lucas Milas",
+            name: "Tesla",
             cost: 150,
             position: 28,
             group: "utility",
             type: "utility",
-            url: "images/milas.jpg",
+            url: "https://i.imgur.com/kVnhd7V.png",
             color: "#FBB677"
         },
         {
             //Atlantic Avenue
-            name: "Paul Macrez",
+            name: "TikTok",
             cost: 260,
             upgrade: 150,
             position: 26,
@@ -340,18 +353,18 @@ module.exports = {
                 24, 120, 360, 850, 1025, 1200,
             ],
             type: "property",
-            url: "images/paul.jpg",
+            url: "https://i.imgur.com/eodeQiK.jpg?1",
             color: "#fff852"
         },
         {
-            name: "Colle avec Melissa",
+            name: "Go to Jail",
             position: 30,
             type: "go-to-jail",
             url: "https://i.imgur.com/B4pTwgp.jpg"
         },
         {
             //Pacific Avenue
-            name: "Lucas Puig",
+            name: "Lyft",
             cost: 300,
             upgrade: 200,
             position: 31,
@@ -360,12 +373,12 @@ module.exports = {
                 26, 130, 390, 900, 1100, 1275,
             ],
             type: "property",
-            url: "images/lucas.jpg",
+            url: "https://i.imgur.com/QOSHwjX.png",
             color: "#008000",
         },
         {
             //North Carolina Avenue
-            name: "Hugo",
+            name: "Uber",
             cost: 300,
             upgrade: 200,
             position: 32,
@@ -374,19 +387,19 @@ module.exports = {
                 26, 130, 390, 900, 1100, 1275,
             ],
             type: "property",
-            url: "images/hugo.jpg",
+            url: "https://i.imgur.com/ul8swcl.png",
             color: "#008000",
         },
         {
             //Community Chest
-            name: "Caisse de Communauté",
+            name: "Stock Options",
             position: 33,
             type: "chest",
-            url: "images/commu.png"
+            url: "https://i.imgur.com/AC8HcoD.jpg"
         },
         {
             //Pennsylvania Avenue
-            name: "Cassim",
+            name: "Airbnb",
             cost: 320,
             upgrade: 200,
             position: 34,
@@ -395,29 +408,29 @@ module.exports = {
                 28, 150, 450, 1000, 1200, 1400,
             ],
             type: "property",
-            url: "images/cassim.jpg",
+            url: "https://i.imgur.com/25096o5.png",
             color: "#008000",
         },
         {
             //Short Line
-            name: "Manon L",
+            name: "Apple",
             cost: 200,
             base_rent: 25,
             position: 35,
             type: "rr",
-            url: "images/manon.jpg",
+            url: "https://i.imgur.com/NTi8ViD.png",
             color: "#8B4513",
         },
         {
             //Chance
-            name: "Chance",
+            name: "Equity",
             position: 36,
             type: "chance",
-            url: "images/chance.png"
+            url: "https://i.imgur.com/tXYApWB.png"
         },
         {
             //Park Place
-            name: "Béatrice",
+            name: "Workday",
             cost: 350,
             upgrade: 200,
             position: 37,
@@ -426,19 +439,19 @@ module.exports = {
                 35, 175, 500, 1100, 1300, 1500,
             ],
             type: "property",
-            url: "images/bea.jpg",
+            url: "https://i.imgur.com/f4X4kns.png",
             color: "#2148ff",
         },
         {
             //Luxury Tax
-            name: "Evasion de Taxe",
+            name: "Tax Evasion",
             position: 38,
             type: "lux-tax",
             url: "https://i.imgur.com/332sOlL.jpg"
         },
         {
             //Boardwalk
-            name: "Rémi",
+            name: "Salesforce",
             cost: 400,
             upgrade: 200,
             position: 39,
@@ -447,39 +460,39 @@ module.exports = {
                 50, 200, 600, 1400, 1700, 2000,
             ],
             type: "property",
-            url: "images/remi.jpg",
+            url: "https://i.imgur.com/fJ7V1CC.png",
             color: "#2148ff",
         },
     ],
     chance: [
         {
-            name: "Va à la case départ (Gagne $200).",
+            name: "Advance to 'Go' (Collect $200).",
             type: "simple_move",
             position: 0
         },
         {
-            name: "Va voir Camélia.",
+            name: "Advance to Twilio.",
             type: "simple_move",
             position: 24
         },
         {
-            name: "Va voir Pierre, il fait un malaise..",
+            name: "Advance to Dropbox.",
             type: "simple_move",
             position: 11,
             //if you pass Go
         },
         {
-            name: "Rejoint Milas",
+            name: "Advance Token to nearest Musk company.",
             type: "nearest_utility",
             extra: "no_go",
             //either tesla or spacex
         },
         {
-            name: "Avancez à la prochaine bgette, si elle n'est pas prise, vous pouvez l'acheter !",
+            name: "Advance Token to the nearest Big Four and pay owner twice the rental to which they are otherwise entitled. If the railroad is unowned, you may buy it from the Bank.",
             type: "nearest_rr",
         },
         {
-            name: "Ouverture de la Fata ! + $50.",
+            name: "The Stock Market is up today. Collect $50.",
             type: "simple_bank_pay",
             amount: 50,
         },
@@ -488,13 +501,13 @@ module.exports = {
         //     type: "chance"
         // },
         {
-            name: "Reculez de 3 cases.",
+            name: "Go Back Three Spaces.",
             type: "move_amount",
             amount: -3,
 
         },
         {
-            name: "Aller en colle avec Melissa",
+            name: "Go to Jail",
             type: "go_to_jail"
         },
         // {
@@ -502,54 +515,54 @@ module.exports = {
         //     type: "chance"
         // },
         {
-            name: "Payez 15$ pour éviter une colle avec Soudan",
+            name: "Please pay $15 for your stock processing fee.",
             type: "simple_bank_pay",
             amount: -15,
         },
         {
-            name: "Allez voir cette bgette de Marion",
+            name: "Take a tour of Microsoft. If you pass 'GO', collect $200",
             type: "simple_move",
             position: 5
         },
         {
-            name: "Souveton à quelque chose à vous dire",
+            name: "Take a walk to Salesforce.",
             type: "simple_move",
             position: 39
         },
         {
-            name: "Vous avez tricher aux formules trigos. Payez à tous $50.",
+            name: "You have been elected Chairman of the Board. Pay each player $50.",
             type: "pay_all_players",
             amount: 50,
         },
         {
-            name: "Vous avez colle avec Brabant, + $150.",
+            name: "Your building and loan matures. Collect $150.",
             type: "simple_bank_pay",
             amount: 150,
         },
         {
-            name: "CHICKEN BURGER ! +$100",
+            name: "You have won a hackathon. Collect $100",
             type: "simple_bank_pay",
             amount: 100,
         },
     ],
     chest: [
         {
-            name: "Reviens au départ et gagne $200",
+            name: "Advance to 'GO'. Collect $200",
             type: "simple_move",
             position: 0,
         },
         {
-            name: "Tu as réussi un exo de souveton, + $200",
+            name: "Bank error in your favor. Collect $200",
             type: "simple_bank_pay",
             amount: 200,
         },
         {
-            name: "Tu dois payer la cantine... - $50",
+            name: "Doctor's fee. Pay $50",
             type: "simple_bank_pay",
             amount: -50,
         },
         {
-            name: "Tu as survécu une heure avec OCF, +$50",
+            name: "From sale of stock you get $50",
             type: "simple_bank_pay",
             amount: 50,
         },
@@ -558,68 +571,63 @@ module.exports = {
         //     type: "chest"
         // },
         {
-            name: "Colle avec melissa ...",
+            name: "Go to Jail",
             type: "go_to_jail"
         },
         {
-            name: "Tu t'es endormi en Français... -$50.",
+            name: "Grand Opera Night - All players with Venmo you $50.",
             type: "pay_all_players",
             amount: -50,
         },
         {
-            name: "Tu as réussi à tenir 2 h sans te faire prendre par Chemimi, +$100",
+            name: "Holiday Fund Matures - Receive $100",
             type: "simple_bank_pay",
             amount: 100,
         },
         {
-            name: "Tu as survécu une heure avec Delcroix $20",
+            name: "Income tax refund - Collect $20",
             type: "simple_bank_pay",
             amount: 20,
         },
         {
-            name: "C'est le Zinzin ! Voici $10",
+            name: "It's your Birthday! - Collect $10",
             type: "simple_bank_pay",
             amount: 10,
         },
         {
-            name: "Tu as gérer avec Souveton, tu gagnes $100",
+            name: "Life insurance matures - Collect $100",
             type: "simple_bank_pay",
             amount: 100,
         },
         {
-            name: "Tu viens de rater ta colle ... -$100",
+            name: "Pay hospital fees of $100",
             type: "simple_bank_pay",
             amount: -100,
         },
         {
-            name: "Tu dois payer l'internat $150",
+            name: "Pay school fees of $150",
             type: "simple_bank_pay",
             amount: -150,
         },
         {
-            name: "Tu reçois $25 pour avoir supporter Delcroix",
+            name: "Receive $25 consultancy fee",
             type: "simple_bank_pay",
             amount: 25,
         },
+        // {
+        //     name: "You are assessed for street repairs - $40 per house - $115 per hotel",
+        //     type: "chest"
+        // },
         {
-            name: "T'as de plus belles fesses que Melissa, tu gagnes $10",
+            name: "You have won fourth prize in a beauty contest - Collect $10",
             type: "simple_bank_pay",
             amount: 10,
         },
         {
-            name: "Vous gagnez $100",
+            name: "You inherit $100",
             type: "simple_bank_pay",
             amount: 100,
         },
-    ],
-    colors: [
-        "#2550fa",
-        "#de0000",
-        "#d4e305",
-        "#05b3e3",
-        "#e36d05",
-        "#05e35e",
-        "#e3058a",
     ]
 
 };

@@ -1,5 +1,4 @@
 import {decorate, configure, observable, action, computed, runInAction} from 'mobx'
-// import tiles from '../../../server/monopoly';
 import io from 'socket.io-client';
 
 configure({enforceActions: "observed"});
@@ -283,7 +282,7 @@ class Store {
             this.game.player_info[playerIndex].doubles_rolled = 0;
             this.updatePlayerDoublesRolled(playerIndex);
             this.goToJail(playerIndex);
-            this.addToLog(`${this.getPlayer.username} a colle avec melissa :(`);
+            this.addToLog(`${this.getPlayer.username} est en prison`);
         } else {
             if (this.getPlayer.dice[0] === this.getPlayer.dice[1]) {
                 this.setPlayerState("START_TURN");
@@ -671,10 +670,6 @@ class Store {
                     } else {
                         this.game.player_info[data.next_player].state = "START_TURN";
                         this.game.player_info[data.old_player].state = "NOT_TURN";
-                        const notification = new Notification("Your turn!");
-                        notification.onclick = () => {
-                            window.focus();
-                        };
                     }
                 }
             });

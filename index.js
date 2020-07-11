@@ -7,9 +7,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => console.log("Server Started!"));
 const io = require('socket.io')(server);
+const { colors } = require("./plates/colors");
 const game = require("./game");
 const client = require("./db_connection");
-const {board, colors, chest, chance} = require("./monopoly");
 const ObjectId = require('mongodb').ObjectID;
 
 app.use(morgan('short'));
@@ -33,7 +33,9 @@ app.get('/search_for_games', async (req, res) => {
     ).sort([['_id', -1]]).toArray();
     res.json({games});
 });
-app.post('/create_game', async (req, res) => {
+app.post('/:plate/create_game', async (req, res) => {
+    const plate = req.params.plate;
+    const {board,chest, chance} = require("./plates/" + plate);
 
     const newBoard = board.map(tile => {
         return {
@@ -126,7 +128,7 @@ app.post('/join_game', async (req, res) => {
 
     res.json({success: true});
 });
-app.get('*', (req,res) =>{
+app.get('/*', (req,res) =>{
     res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 

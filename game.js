@@ -1,5 +1,4 @@
 const client = require("./db_connection");
-const {board, chance, chest, colors} = require("./monopoly");
 const ObjectId = require('mongodb').ObjectID;
 const shuffle = (input_array) => {
     const a = [...input_array];
@@ -12,46 +11,6 @@ const shuffle = (input_array) => {
 
 
 const game = (socket, io) => {
-    socket.on("create_game", async (input, respond) => {
-        const newBoard = board.map(tile => {
-            return {
-                ...tile,
-                owned: false,
-                player: null,
-                mortgaged: false,
-                upgrades: 0,
-            }
-        });
-        const game = await (await client).insertOne(
-            {
-                game_name: input.game_name,
-                player_info: [{
-                    username: input.username,
-                    position: 0,
-                    money: 1500,
-                    id: 0,
-                    state: "START_TURN",
-                    jail_state: false,
-                    jail_turns: 0,
-                    doubles_rolled: 0,
-                    dice: [0, 0],
-                    pay_multiplier: 1,
-                    color: colors[0],
-                }],
-                auction: false,
-                auction_tile: 0,
-                trades: [],
-                logs: [],
-                board: newBoard,
-                chance: shuffle(chance),
-                chest: shuffle(chest),
-                last_chance_card: -1,
-                last_chest_card: -1,
-                current_player: 0,
-            }
-        );
-        respond(game.ops[0]);
-    });
     socket.on('join_game', async (input) => {
         try {
             socket.username = input.username;

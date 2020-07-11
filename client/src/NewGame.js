@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {Component} from 'react';
 import {inject, observer} from "mobx-react";
 import {withRouter} from 'react-router-dom';
@@ -10,9 +11,10 @@ class NewGame extends Component {
     state = {
         game_name: "",
         game_password: "",
+        plate: "mp",
         username: "",
         password: "",
-        selectedTab: "create_game",
+        selectedTab: "home",
         searchGameName: "",
         gamesFound: [],
         gamesFoundSelected: -1,
@@ -28,7 +30,8 @@ class NewGame extends Component {
 
     submitNewGame = (e) => {
         e.preventDefault();
-        fetch(`${URL}/create_game`, {
+        console.log(`${URL}/${this.state.plate}/create_game`)
+        fetch(`${URL}/${this.state.plate}/create_game`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -134,20 +137,43 @@ class NewGame extends Component {
     render() {
 
         return (
-            <div className="new-game-main">
+            <div>
                 <ToastContainer/>
-                <ul className="nav nav-tabs">
-                    <li className="nav-item cursor" onClick={() => this.setState({selectedTab: "create_game"})}>
-                        <div className={`nav-link ${this.state.selectedTab === "create_game" ? "active" : ""}`}>
-                            Créer une partie
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                <a class="navbar-brand text-white" href="#" onClick={() => this.setState({selectedTab: "home"})}>Monopoly</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item cursor" onClick={() => this.setState({selectedTab: "create_game"})}>
+                            <div className={`nav-link text-white ${this.state.selectedTab === "create_game" ? "active" : ""}`}>
+                                Créer une partie
+                            </div>
+                        </li>
+                        <li className="nav-item cursor" onClick={() => this.setState({selectedTab: "join_game"})}>
+                            <div className={`nav-link text-white ${this.state.selectedTab === "join_game" ? "active" : ""}`}>
+                                Rejoindre une partie
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </nav>
+                {this.state.selectedTab === "home" && (
+                    <div className="container" style={{paddingTop: "50px"}}>
+                        <div class="jumbotron">
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/ca/Monopoly.svg/1200px-Monopoly.svg.png"
+                            className="center"
+                            alt="monopoly"
+                        />
+                        <hr class="my-4" />
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg center" onClick={() => this.setState({selectedTab: "create_game"})} href="#" role="button">Jouer</a>
+                        </p>
                         </div>
-                    </li>
-                    <li className="nav-item cursor" onClick={() => this.setState({selectedTab: "join_game"})}>
-                        <div className={`nav-link ${this.state.selectedTab === "join_game" ? "active" : ""}`}>
-                            Rejoindre une partie
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                )}
                 {this.state.selectedTab === "create_game" && (
                     <div className="create-game-input">
                         <form onSubmit={this.submitNewGame}>
@@ -173,6 +199,13 @@ class NewGame extends Component {
                                    onChange={({target}) => this.setState({password: target.value})} type="password"
                                    className="form-control mb-2"
                                    placeholder="Mot de passe"/>
+                            <small className="form-text text-muted align-self-start">Plateau</small>
+                            <select required value={this.state.plate}
+                                   onChange={({target}) => this.setState({plate: target.value})}
+                                   className="form-control mb-2">
+                                <option value="social">Réseaux sociaux</option>
+                                <option value="mp">MP</option>
+                            </select>
                             <button type="submit" className="btn btn-primary">Créer</button>
                         </form>
                     </div>

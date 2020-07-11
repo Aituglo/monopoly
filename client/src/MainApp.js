@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import "./App.css";
+//import "./App.css";
 import {inject, observer} from "mobx-react";
 import {withRouter} from 'react-router-dom';
 import Board from "./Board"

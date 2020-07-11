@@ -126,8 +126,9 @@ app.post('/join_game', async (req, res) => {
 
     res.json({success: true});
 });
+app.use('/static', express.static(__dirname + '/client/build/public/static'));
 app.get('*', (req,res) =>{
-    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+    res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
 io.on('connection', (socket) => {

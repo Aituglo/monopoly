@@ -41,6 +41,11 @@ class Store {
             } else {
                 this.game.player_info[playerIndex].jail_turns += 1;
             }
+            if(this.game.player_info[playerIndex].jail_turns >= 3){
+                this.setJailState(false);
+                this.syncPlayerJailState();
+                this.game.player_info[playerIndex].jail_turns = 0;
+            }
             this.updatePlayerJailRolls(playerIndex);
             this.setPlayerState("END_OF_TURN");
             this.syncPlayerState();
@@ -61,11 +66,7 @@ class Store {
         this.syncPlayerJailState();
         this.game.player_info[playerIndex].jail_turns = 0;
         this.updatePlayerJailRolls(playerIndex);
-        if (this.getPlayer.jail_turns === 3) {
-            this.setPlayerState("START_TURN");
-        } else {
-            this.setPlayerState("END_OF_TURN");
-        }
+        this.setPlayerState("END_OF_TURN");
         this.syncPlayerState();
     };
     movePlayerDev = (position) => {
@@ -257,7 +258,7 @@ class Store {
         if (this.getPlayer.jail_state) {
             return;
         }
-        this.addToLog(`${this.getPlayer.username} a fait ${this.diceSum} (${this.getPlayer.dice[0]} - ${this.getPlayer.dice[1]}) et il est chez ${tile.name}.`);
+        this.addToLog(`${this.getPlayer.username} a fait ${this.diceSum} (${this.getPlayer.dice[0]} - ${this.getPlayer.dice[1]}). Case ${tile.name}.`);
         this.checkIfPlayerPassedGo();
         if (tile.owned && tile.player !== playerIndex) {
             this.payPlayer();
@@ -544,7 +545,7 @@ class Store {
         this.syncPlayerState();
     };
     rejectBuyTile = () => {
-        this.addToLog(`${this.getPlayer.username} refuse de payer ${this.playerTile.name}. Enchères.`);
+        this.addToLog(`${this.getPlayer.username} refuse de payer ${this.playerTile.name}.`);
         if (this.getPlayer.dice[0] === this.getPlayer.dice[1]) {
             this.setPlayerState("START_TURN");
         } else {

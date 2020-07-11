@@ -20,11 +20,9 @@ class Logs extends Component {
                     <div>Pas d'actions...</div>
                 )}
                 {this.props.store.game.logs.map((log, i) => {
-                    let date = new Date(log.time).toLocaleString();
-                    date = date.slice(0, -6) + date.slice(-3, date.length);
                     return (
                         <div key={i}>
-                            {date}: {log.log}
+                            {log.log}
                         </div>
                     )
                 })}

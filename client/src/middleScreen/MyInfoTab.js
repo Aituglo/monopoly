@@ -11,15 +11,11 @@ class MyInfoTab extends Component {
                         <div className="d-flex flex-row info-tab-row">
                             <span className="info-tab-label">Nom: </span>
                             <span
-                                className="flex-fill">{this.props.store.getPlayer.username} - ({this.props.store.playerIndex + 1})</span>
+                                className="flex-fill">({this.props.store.playerIndex + 1}) - {this.props.store.getPlayer.username}</span>
                         </div>
                         <div className="d-flex flex-row info-tab-row">
                             <span className="info-tab-label">Case: </span>
                             <span className="flex-fill">{this.props.store.playerTile.name}</span>
-                        </div>
-                        <div className="d-flex flex-row info-tab-row">
-                            <span className="info-tab-label">Sortie Prison: </span>
-                            <span className="flex-fill">Non</span>
                         </div>
                     </div>
                     <div className="d-flex flex-column">
@@ -30,10 +26,6 @@ class MyInfoTab extends Component {
                         <div className="d-flex flex-row info-tab-row">
                             <span className="info-tab-label">Net: </span>
                             <span className="flex-fill">${this.props.store.netWorth}</span>
-                        </div>
-                        <div className="d-flex flex-row info-tab-row">
-                            <span className="info-tab-label">Possible: </span>
-                            <span className="flex-fill">${this.props.store.liquidWorth}</span>
                         </div>
                     </div>
                 </div>

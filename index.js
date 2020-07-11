@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 const server = app.listen(port, () => console.log("Server Started!"));
 const io = require('socket.io')(server);
 const game = require("./game");

@@ -440,7 +440,7 @@ class Store {
         const playerIndex = this.playerIndex;
         this.game.player_info[playerIndex].money -= 75;
         this.updatePlayerMoney(playerIndex);
-        this.addToLog(`${this.getPlayer.username} paye $75 pour s'enfuir de colle :O`);
+        this.addToLog(`${this.getPlayer.username} paye $75 !`);
         if (this.getPlayer.dice[0] === this.getPlayer.dice[1]) {
             this.setPlayerState("START_TURN");
         } else {
@@ -856,6 +856,9 @@ class Store {
     calcRentCostTile = (tileIndex, preDiceRoll) => {
         const tile = this.game.board[tileIndex];
         if (tile.type === "rr") {
+            if (tile.mortgaged) {
+                return 0;
+            }
             let numOwns = this.game.board.filter(el => el.type === "rr" && el.player === tile.player).length;
             return tile.base_rent * Math.pow(2, numOwns - 1);
         } else if (tile.type === "property") {
@@ -873,6 +876,9 @@ class Store {
                 return tile.rent[0];
             }
         } else if (tile.type === "utility") {
+            if (tile.mortgaged) {
+                return 0;
+            }
             let ownsAll = this.game.board.filter(el => el.group === tile.group && el.player !== tile.player).length === 0;
             if (!ownsAll) {
                 if (preDiceRoll) {

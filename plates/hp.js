@@ -474,7 +474,7 @@ module.exports = {
             //if you pass Go
         },
         {
-            name: "Rejoint Romain",
+            name: "Rejoint la grande salle",
             type: "nearest_utility",
             extra: "no_go",
             //either tesla or spacex
@@ -519,7 +519,7 @@ module.exports = {
             amount: 50,
         },
         {
-            name: "Tu achètes un drgaon de Roumanie, - 150 gallions.",
+            name: "Tu achètes un dragon de Roumanie, - 150 gallions.",
             type: "simple_bank_pay",
             amount: -150,
         },

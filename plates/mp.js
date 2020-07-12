@@ -469,7 +469,7 @@ module.exports = {
             //if you pass Go
         },
         {
-            name: "Rejoint Romain",
+            name: "Rejoint Bionoix",
             type: "nearest_utility",
             extra: "no_go",
             //either tesla or spacex

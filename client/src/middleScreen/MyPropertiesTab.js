@@ -20,11 +20,6 @@ class MyPropertiesTab extends Component {
                     {this.props.store.playersProperties(this.props.store.playerIndex).map((property, i) => {
                         return (
                             <tr key={i}>
-                                <th scope="row">
-                                    <div className="my-properties-pic" style={{
-                                        backgroundImage: `url(${property.url})`,
-                                    }}/>
-                                </th>
                                 <td className="text-center">{property.name}</td>
                                 <td className="text-center">{property.calculatedRent === parseInt(property.calculatedRent, 10) ? `$${property.calculatedRent}` : property.calculatedRent}</td>
                                 {property.upgrade ?

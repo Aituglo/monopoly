@@ -33,11 +33,6 @@ class PlayersTab extends Component {
                             <span
                                 className="flex-fill">${this.props.store.netWorthOfPlayer(this.props.player)}</span>
                         </div>
-                        <div className="d-flex flex-row info-tab-row">
-                            <span className="info-tab-label">Possible: </span>
-                            <span
-                                className="flex-fill">${this.props.store.liquidWorthofPlayer(this.props.player)}</span>
-                        </div>
                     </div>
                 </div>
                 <div className="d-flex justify-content-center">

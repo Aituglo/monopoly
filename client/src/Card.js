@@ -71,12 +71,6 @@ class Card extends Component {
                             className="left-tiles-upgrade-bar-component"
                         />
                         }
-                        {this.props.store.game.board[this.props.position].upgrades > 4 &&
-                        <div
-                            style={{backgroundColor: this.props.store.game.player_info[this.props.store.game.board[this.props.position].player].color}}
-                            className="left-tiles-upgrade-bar-component"
-                        />
-                        }
                     </div>
                 )}
                 {/*{this.props.bottom && this.props.store.game.board[this.props.position].color && (*/}

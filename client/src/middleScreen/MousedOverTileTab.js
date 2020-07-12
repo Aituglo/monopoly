@@ -75,10 +75,6 @@ class MousedOverTileTab extends Component {
                                     <div>${this.props.store.calcRentCostTile(this.props.store.mousedOverTile, true)}</div>
                                 </div>
                             )}
-                            <div className="d-flex justify-content-between">
-                                <div>Loyer de base:</div>
-                                <div>${this.props.store.calcRentCostTile(this.props.store.mousedOverTile, true)}</div>
-                            </div>
                         </div>
                         <div className="d-flex flex-column justify-content-between tile-info-upgrades">
                             {tile.type === "property" && (

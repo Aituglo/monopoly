@@ -3,7 +3,7 @@
     /*min-width: 1300px;*/
     height: inherit;
     min-height: 765px;
-    background-image: url("http://monopoly.workwiththey.com/_site/img/background.jpg");
+    background-image: url("/images/background.jpg");
     background-size: cover;
     /*background-repeat: no-repeat;*/
     background-position: 50%;

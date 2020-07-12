@@ -5,7 +5,7 @@ module.exports = {
             name: "GO",
             position: 0,
             type: "go",
-            url: "https://th.bing.com/th/id/OIP.jKT9tIcVQKgO5SSgEtvKrAHaFj?pid=Api&rs=1"
+            url: "images/mpcouple/chate.jpeg"
         },
         {
             //Mediterranean Avenue

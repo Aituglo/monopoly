@@ -19,73 +19,81 @@ class Board extends Component {
 
     render() {
         return (
-            this.props.store.inGame ? <div
-                    style={{outline: `2px solid ${this.props.store.getPlayer.state !== "NOT_TURN" ? "#61c86a" : "#c8464b"}`}}
-                    className="d-flex flex-column main-box">
-                    <MainView/>
-                    <div className="d-flex flex-row">
-                        <Card position={20}/>
-                        <Card bottom={true} position={21}/>
-                        <div/>
-                        <Card bottom={true} position={22}/>
-                        <div/>
-                        <Card bottom={true} position={23}/>
-                        <Card bottom={true} position={24}/>
-                        <Card bottom={true} position={25}/>
-                        <Card bottom={true} position={26}/>
-                        <Card bottom={true} position={27}/>
-                        <Card bottom={true} position={28}/>
-                        <Card bottom={true} position={29}/>
-                        <Card position={30}/>
+            this.props.store.inGame ? 
+                <div>
+                    <div className="player-list">
+                        {this.props.store.game.player_info.filter(player => player.state !== "OUT").length > 0 && this.props.store.game.player_info.filter(player => player.state !== "OUT").map((player, index) => (
+                            <h4 className="player-name" key={player.id}><span class="dot" style={{backgroundColor: player.color}}></span>  {player.username} : ${player.money}</h4>
+                        ))}
                     </div>
-                    <div className="main-row-here d-flex flex-row justify-content-between">
-                        <Card right={true} position={19}/>
-                        <Card left={true} position={31}/>
-                    </div>
-                    <div className="d-flex flex-row justify-content-between">
-                        <Card right={true} position={18}/>
-                        <Card left={true} position={32}/>
-                    </div>
-                    <div className="d-flex flex-row justify-content-between">
-                        <Card right={true} position={17}/>
-                        <Card left={true} position={33}/>
-                    </div>
-                    <div className="d-flex flex-row justify-content-between">
-                        <Card right={true} position={16}/>
-                        <Card left={true} position={34}/>
-                    </div>
-                    <div className="d-flex flex-row justify-content-between">
-                        <Card right={true} position={15}/>
-                        <Card left={true} position={35}/>
-                    </div>
-                    <div className="d-flex flex-row justify-content-between">
-                        <Card right={true} position={14}/>
-                        <Card left={true} position={36}/>
-                    </div>
-                    <div className="d-flex flex-row justify-content-between">
-                        <Card right={true} position={13}/>
-                        <Card left={true} position={37}/>
-                    </div>
-                    <div className="d-flex flex-row justify-content-between">
-                        <Card right={true} position={12}/>
-                        <Card left={true} position={38}/>
-                    </div>
-                    <div className="d-flex flex-row justify-content-between">
-                        <Card right={true} position={11}/>
-                        <Card left={true} position={39}/>
-                    </div>
-                    <div className="d-flex flex-row">
-                        <Card position={10}/>
-                        <Card top={true} position={9}/>
-                        <Card top={true} position={8}/>
-                        <Card top={true} position={7}/>
-                        <Card top={true} position={6}/>
-                        <Card top={true} position={5}/>
-                        <Card top={true} position={4}/>
-                        <Card top={true} position={3}/>
-                        <Card top={true} position={2}/>
-                        <Card top={true} position={1}/>
-                        <Card position={0}/>
+                    <div
+                        style={{outline: `2px solid ${this.props.store.getPlayer.state !== "NOT_TURN" ? "#61c86a" : "#c8464b"}`}}
+                        className="d-flex flex-column main-box">
+                        <MainView/>
+                        <div className="d-flex flex-row">
+                            <Card position={20}/>
+                            <Card bottom={true} position={21}/>
+                            <div/>
+                            <Card bottom={true} position={22}/>
+                            <div/>
+                            <Card bottom={true} position={23}/>
+                            <Card bottom={true} position={24}/>
+                            <Card bottom={true} position={25}/>
+                            <Card bottom={true} position={26}/>
+                            <Card bottom={true} position={27}/>
+                            <Card bottom={true} position={28}/>
+                            <Card bottom={true} position={29}/>
+                            <Card position={30}/>
+                        </div>
+                        <div className="main-row-here d-flex flex-row justify-content-between">
+                            <Card right={true} position={19}/>
+                            <Card left={true} position={31}/>
+                        </div>
+                        <div className="d-flex flex-row justify-content-between">
+                            <Card right={true} position={18}/>
+                            <Card left={true} position={32}/>
+                        </div>
+                        <div className="d-flex flex-row justify-content-between">
+                            <Card right={true} position={17}/>
+                            <Card left={true} position={33}/>
+                        </div>
+                        <div className="d-flex flex-row justify-content-between">
+                            <Card right={true} position={16}/>
+                            <Card left={true} position={34}/>
+                        </div>
+                        <div className="d-flex flex-row justify-content-between">
+                            <Card right={true} position={15}/>
+                            <Card left={true} position={35}/>
+                        </div>
+                        <div className="d-flex flex-row justify-content-between">
+                            <Card right={true} position={14}/>
+                            <Card left={true} position={36}/>
+                        </div>
+                        <div className="d-flex flex-row justify-content-between">
+                            <Card right={true} position={13}/>
+                            <Card left={true} position={37}/>
+                        </div>
+                        <div className="d-flex flex-row justify-content-between">
+                            <Card right={true} position={12}/>
+                            <Card left={true} position={38}/>
+                        </div>
+                        <div className="d-flex flex-row justify-content-between">
+                            <Card right={true} position={11}/>
+                            <Card left={true} position={39}/>
+                        </div>
+                        <div className="d-flex flex-row">
+                            <Card position={10}/>
+                            <Card top={true} position={9}/>
+                            <Card top={true} position={8}/>
+                            <Card top={true} position={7}/>
+                            <Card top={true} position={6}/>
+                            <Card top={true} position={5}/>
+                            <Card top={true} position={4}/>
+                            <Card top={true} position={3}/>
+                            <Card top={true} position={2}/>
+                            <Card top={true} position={1}/>
+                            <Card position={0}/>
+                        </div>
                     </div>
                 </div>
                 :

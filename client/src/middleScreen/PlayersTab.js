@@ -17,10 +17,6 @@ class PlayersTab extends Component {
                             <span
                                 className="flex-fill">{this.props.store.game.board[this.props.store.game.player_info[this.props.player].position].name}</span>
                         </div>
-                        <div className="d-flex flex-row info-tab-row">
-                            <span className="info-tab-label">Sortie prison: </span>
-                            <span className="flex-fill">Non</span>
-                        </div>
                     </div>
                     <div className="d-flex flex-column">
                         <div className="d-flex flex-row info-tab-row">

@@ -5,13 +5,14 @@ import {withRouter} from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import {ToastContainer, toast} from 'react-toastify';
 
-const URL = process.env.REACT_APP_URL || "https://monopoly.cassimkhouani.com";
+const URL = process.env.REACT_APP_URL || 'https://monopoly.cassimkhouani.com';
 
 class NewGame extends Component {
     state = {
         game_name: "",
         game_password: "",
         plate: "mp",
+        money: 1500,
         username: "",
         password: "",
         selectedTab: "home",
@@ -30,8 +31,7 @@ class NewGame extends Component {
 
     submitNewGame = (e) => {
         e.preventDefault();
-        console.log(`${URL}/${this.state.plate}/create_game`)
-        fetch(`${URL}/${this.state.plate}/create_game`, {
+        fetch(`${URL}/${this.state.plate}/${this.state.money}/create_game`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -139,12 +139,12 @@ class NewGame extends Component {
         return (
             <div>
                 <ToastContainer/>
-                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-                <a class="navbar-brand text-white" href="#" onClick={() => this.setState({selectedTab: "home"})}>Monopoly</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+                <a className="navbar-brand text-white" href="#" onClick={() => this.setState({selectedTab: "home"})}>Monopoly</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item cursor" onClick={() => this.setState({selectedTab: "create_game"})}>
                             <div className={`nav-link text-white ${this.state.selectedTab === "create_game" ? "active" : ""}`}>
@@ -205,7 +205,14 @@ class NewGame extends Component {
                                    className="form-control mb-2">
                                 <option value="social">Réseaux sociaux</option>
                                 <option value="mp">MP</option>
+                                <option value="mpcouple">MP Couples</option>
+                                <option value="hp">Harry Potter</option>
                             </select>
+                            <small className="form-text text-muted align-self-start">Argent de départ</small>
+                            <input required value={this.state.money}
+                                   onChange={({target}) => this.setState({money: target.value})}
+                                   type="number" className="form-control mb-2"
+                                   placeholder="Argent de départ"/>
                             <button type="submit" className="btn btn-primary">Créer</button>
                         </form>
                     </div>

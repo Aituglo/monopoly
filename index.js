@@ -33,10 +33,10 @@ app.get('/search_for_games', async (req, res) => {
     ).sort([['_id', -1]]).toArray();
     res.json({games});
 });
-app.post('/:plate/create_game', async (req, res) => {
+app.post('/:plate/:money/create_game', async (req, res) => {
     const plate = req.params.plate;
+    const money = req.params.money;
     const {board,chest, chance} = require("./plates/" + plate);
-
     const newBoard = board.map(tile => {
         return {
             ...tile,
@@ -46,6 +46,7 @@ app.post('/:plate/create_game', async (req, res) => {
             upgrades: 0,
         }
     });
+    
     const game = await (await client).insertOne(
         {
             auth: {
@@ -56,7 +57,7 @@ app.post('/:plate/create_game', async (req, res) => {
                 username: req.body.username,
                 password: req.body.password,
                 position: 0,
-                money: 1500,
+                money: parseInt(money),
                 id: 0,
                 state: "START_TURN",
                 jail_state: false,
@@ -66,6 +67,7 @@ app.post('/:plate/create_game', async (req, res) => {
                 pay_multiplier: 1,
                 color: colors[0],
             }],
+            money: parseInt(money),
             animated_players_move: {player: -1, moves: []},
             game_state: "INVITING_PLAYERS",
             auction: false,
@@ -85,7 +87,7 @@ app.post('/:plate/create_game', async (req, res) => {
 app.post('/join_game', async (req, res) => {
     const game = await (await client).findOne(
         {_id: new ObjectId(req.body.game_id)},
-        {fields: {player_info: 1, auth: 1, game_state: 1}},
+        {fields: {player_info: 1, auth: 1, game_state: 1, money: 1}},
     );
     if (req.body.game_password !== game.auth.game_password) {
         res.json({error: "incorrect_game_pw"});
@@ -105,7 +107,7 @@ app.post('/join_game', async (req, res) => {
                         username: req.body.username,
                         password: req.body.password,
                         position: 0,
-                        money: 1500,
+                        money: game.money,
                         id: Math.max(...game.player_info.map(el => el.id)) + 1,
                         state: "NOT_TURN",
                         jail_state: false,

@@ -18,7 +18,7 @@ module.exports = {
                 2, 10, 30, 90, 160, 250,
             ],
             type: "property",
-            url: "images/rambouille.jpg",
+            url: "images/mp/rambouille.jpg",
             color: "#5E3C9F",
         },
         {
@@ -26,7 +26,7 @@ module.exports = {
             name: "Caisse de Communauté",
             position: 2,
             type: "chance",
-            url: "images/commu.png"
+            url: "images/mp/commu.png"
         },
         {
             //Baltic Ave
@@ -39,7 +39,7 @@ module.exports = {
                 4, 20, 60, 180, 320, 450,
             ],
             type: "property",
-            url: "images/bryan.jpg",
+            url: "images/mp/bryan.jpg",
             color: "#5E3C9F",
         },
         {
@@ -56,7 +56,7 @@ module.exports = {
             base_rent: 25,
             position: 5,
             type: "rr",
-            url: "images/marion.jpg",
+            url: "images/mp/marion.jpg",
             color: "#8B4513",
         },
         {
@@ -70,7 +70,7 @@ module.exports = {
                 6, 30, 90, 270, 400, 550,
             ],
             type: "property",
-            url: "images/baptiste.jpg",
+            url: "images/mp/baptiste.jpg",
             color: "#9eeafb"
         },
         {
@@ -78,7 +78,7 @@ module.exports = {
             name: "Chance",
             position: 7,
             type: "chance",
-            url: "images/chance.png"
+            url: "images/mp/chance.png"
         },
         {
             //Vermont Avenue
@@ -91,7 +91,7 @@ module.exports = {
                 6, 30, 90, 270, 400, 550,
             ],
             type: "property",
-            url: "images/victor.jpg",
+            url: "images/mp/victor.jpg",
             color: "#9eeafb"
         },
         {
@@ -105,7 +105,7 @@ module.exports = {
                 8, 40, 100, 300, 450, 600,
             ],
             type: "property",
-            url: "images/gauthier.jpg",
+            url: "images/mp/gauthier.jpg",
             color: "#9eeafb"
         },
         {
@@ -125,7 +125,7 @@ module.exports = {
                 10, 50, 150, 450, 625, 750,
             ],
             type: "property",
-            url: "images/pierre.jpg",
+            url: "images/mp/pierre.jpg",
             color: "#D13F9B",
         },
         {
@@ -135,7 +135,7 @@ module.exports = {
             position: 12,
             group: "utility",
             type: "utility",
-            url: "images/romain.jpg",
+            url: "images/mp/romain.jpg",
             color: "#FBB677"
         },
         {
@@ -149,7 +149,7 @@ module.exports = {
                 10, 50, 150, 450, 625, 750,
             ],
             type: "property",
-            url: "images/nas.jpg",
+            url: "images/mp/nas.jpg",
             color: "#D13F9B",
         },
         {
@@ -163,7 +163,7 @@ module.exports = {
                 12, 60, 180, 500, 700, 900,
             ],
             type: "property",
-            url: "images/louis.jpg",
+            url: "images/mp/louis.jpg",
             color: "#D13F9B",
         },
         {
@@ -173,7 +173,7 @@ module.exports = {
             base_rent: 25,
             position: 15,
             type: "rr",
-            url: "images/kelly.jpg",
+            url: "images/mp/kelly.jpg",
             color: "#8B4513",
         },
         {
@@ -187,7 +187,7 @@ module.exports = {
                 14, 70, 200, 550, 750, 950,
             ],
             type: "property",
-            url: "images/loulou.jpg",
+            url: "images/mp/loulou.jpg",
             color: "#FFA500",
         },
         {
@@ -195,7 +195,7 @@ module.exports = {
             name: "Caisse de Communauté",
             position: 17,
             type: "chest",
-            url: "images/commu.png"
+            url: "images/mp/commu.png"
         },
         {
             //St James Place
@@ -208,7 +208,7 @@ module.exports = {
                 14, 70, 200, 550, 750, 950,
             ],
             type: "property",
-            url: "images/alexis.jpg",
+            url: "images/mp/alexis.jpg",
             color: "#FFA500",
         },
         {
@@ -222,7 +222,7 @@ module.exports = {
                 16, 80, 220, 600, 800, 1000,
             ],
             type: "property",
-            url: "images/camelia.jpg",
+            url: "images/mp/camelia.jpg",
             color: "#FFA500",
         },
         {
@@ -230,7 +230,7 @@ module.exports = {
             name: "Parking",
             position: 20,
             type: "parking",
-            url: "images/parking.png"
+            url: "images/mp/parking.png"
         },
         {
             //Kentucky Avenue
@@ -243,7 +243,7 @@ module.exports = {
                 18, 90, 250, 700, 875, 1050,
             ],
             type: "property",
-            url: "images/margaux.jpg",
+            url: "images/mp/margaux.jpg",
             color: "#ff3f3f"
         },
         {
@@ -251,7 +251,7 @@ module.exports = {
             name: "Chance",
             position: 22,
             type: "chance",
-            url: "images/chance.png"
+            url: "images/mp/chance.png"
         },
         {
             //Indiana Avenue
@@ -264,7 +264,7 @@ module.exports = {
                 18, 90, 250, 700, 875, 1050,
             ],
             type: "property",
-            url: "images/celine.jpg",
+            url: "images/mp/celine.jpg",
             color: "#ff3f3f"
         },
         {
@@ -278,7 +278,7 @@ module.exports = {
                 20, 100, 300, 750, 925, 1100,
             ],
             type: "property",
-            url: "images/manonm.jpg",
+            url: "images/mp/manonm.jpg",
             color: "#ff3f3f"
         },
         {
@@ -288,7 +288,7 @@ module.exports = {
             base_rent: 25,
             position: 25,
             type: "rr",
-            url: "images/lea.jpg",
+            url: "images/mp/lea.jpg",
             color: "#8B4513",
         },
         {
@@ -302,7 +302,7 @@ module.exports = {
                 22, 110, 330, 800, 975, 1150,
             ],
             type: "property",
-            url: "images/gillou.jpg",
+            url: "images/mp/gillou.jpg",
             color: "#fff852"
         },
         {
@@ -316,7 +316,7 @@ module.exports = {
                 22, 110, 330, 800, 975, 1150,
             ],
             type: "property",
-            url: "images/poupe.jpg",
+            url: "images/mp/poupe.jpg",
             color: "#fff852"
         },
         {
@@ -326,7 +326,7 @@ module.exports = {
             position: 28,
             group: "utility",
             type: "utility",
-            url: "images/milas.jpg",
+            url: "images/mp/milas.jpg",
             color: "#FBB677"
         },
         {
@@ -360,7 +360,7 @@ module.exports = {
                 26, 130, 390, 900, 1100, 1275,
             ],
             type: "property",
-            url: "images/lucas.jpg",
+            url: "images/mp/lucas.jpg",
             color: "#008000",
         },
         {
@@ -374,7 +374,7 @@ module.exports = {
                 26, 130, 390, 900, 1100, 1275,
             ],
             type: "property",
-            url: "images/hugo.jpg",
+            url: "images/mp/hugo.jpg",
             color: "#008000",
         },
         {
@@ -382,7 +382,7 @@ module.exports = {
             name: "Caisse de Communauté",
             position: 33,
             type: "chest",
-            url: "images/commu.png"
+            url: "images/mp/commu.png"
         },
         {
             //Pennsylvania Avenue
@@ -395,7 +395,7 @@ module.exports = {
                 28, 150, 450, 1000, 1200, 1400,
             ],
             type: "property",
-            url: "images/cassim.jpg",
+            url: "images/mp/cassim.jpg",
             color: "#008000",
         },
         {
@@ -405,7 +405,7 @@ module.exports = {
             base_rent: 25,
             position: 35,
             type: "rr",
-            url: "images/manon.jpg",
+            url: "images/mp/manon.jpg",
             color: "#8B4513",
         },
         {
@@ -413,7 +413,7 @@ module.exports = {
             name: "Chance",
             position: 36,
             type: "chance",
-            url: "images/chance.png"
+            url: "images/mp/chance.png"
         },
         {
             //Park Place
@@ -426,7 +426,7 @@ module.exports = {
                 35, 175, 500, 1100, 1300, 1500,
             ],
             type: "property",
-            url: "images/bea.jpg",
+            url: "images/mp/bea.jpg",
             color: "#2148ff",
         },
         {
@@ -447,7 +447,7 @@ module.exports = {
                 50, 200, 600, 1400, 1700, 2000,
             ],
             type: "property",
-            url: "images/remi.jpg",
+            url: "images/mp/remi.jpg",
             color: "#2148ff",
         },
     ],
@@ -469,7 +469,7 @@ module.exports = {
             //if you pass Go
         },
         {
-            name: "Rejoint Milas",
+            name: "Rejoint Romain",
             type: "nearest_utility",
             extra: "no_go",
             //either tesla or spacex
@@ -483,10 +483,6 @@ module.exports = {
             type: "simple_bank_pay",
             amount: 50,
         },
-        // {
-        //     name: "Get out of Jail Free",
-        //     type: "chance"
-        // },
         {
             name: "Reculez de 3 cases.",
             type: "move_amount",
@@ -497,10 +493,6 @@ module.exports = {
             name: "Aller en prison",
             type: "go_to_jail"
         },
-        // {
-        //     name: "Make general repairs to your property: For each house, pay $25. For each hotel, pay $100",
-        //     type: "chance"
-        // },
         {
             name: "Payez 15$ pour éviter une colle avec Soudan",
             type: "simple_bank_pay",

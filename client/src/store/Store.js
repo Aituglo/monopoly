@@ -274,6 +274,15 @@ class Store {
             }
         } else if (tile.type === "lux-tax") {
             this.payLuxuryTax();
+        } else if (tile.type === "parking") {
+            this.game.player_info[playerIndex].money += 100;
+            this.addToLog(`${this.getPlayer.username} est au parking et gagne $100 !`);
+            this.socket.emit("update_player_money", {
+                game_id: this.gameAuthInfo.game_id,
+                player_money: this.game.player_info[playerIndex].money,
+                player_index: playerIndex,
+            });
+            this.setPlayerState("END_OF_TURN");
         } else if (tile.type === "chance" || tile.type === "chest") {
             this.handleModifierCard(tile.type);
         } else if (tile.type === "income-tax") {

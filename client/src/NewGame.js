@@ -205,7 +205,7 @@ class NewGame extends Component {
                                    className="form-control mb-2">
                                 <option value="social">Réseaux sociaux</option>
                                 <option value="mp">MP</option>
-                                <option value="mario">Mario</option>
+                                <option value="mario">Mario Kart</option>
                                 <option value="mpcouple">MP Couples</option>
                                 <option value="hp">Harry Potter</option>
                             </select>

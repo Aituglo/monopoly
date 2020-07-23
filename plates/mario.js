@@ -2,14 +2,14 @@ module.exports = {
     board: [
         {
             //GO
-            name: "GO",
+            name: "3,2,1, GO !",
             position: 0,
             type: "go",
-            url: "https://i.imgur.com/zlsuZeT.jpg"
+            url: "images/mario/lakitu.jpg"
         },
         {
             //Mediterranean Avenue
-            name: "Rambouille",
+            name: "Toadette",
             cost: 60,
             upgrade: 50,
             position: 1,
@@ -18,19 +18,19 @@ module.exports = {
                 2, 10, 30, 90, 160, 250,
             ],
             type: "property",
-            url: "images/mario/rambouille.jpg",
+            url: "images/mario/toadette.jpg",
             color: "#5E3C9F",
         },
         {
             //Community Chest
-            name: "Caisse de Communauté",
+            name: "Khube",
             position: 2,
             type: "chance",
-            url: "images/mario/commu.png"
+            url: "images/mario/cube.jpg"
         },
         {
             //Baltic Ave
-            name: "Bryan",
+            name: "Toad",
             cost: 60,
             upgrade: 50,
             position: 3,
@@ -39,7 +39,7 @@ module.exports = {
                 4, 20, 60, 180, 320, 450,
             ],
             type: "property",
-            url: "images/mario/bryan.jpg",
+            url: "images/mario/toad.jpg",
             color: "#5E3C9F",
         },
         {
@@ -47,21 +47,21 @@ module.exports = {
             name: "Taxe",
             position: 4,
             type: "income-tax",
-            url: "https://i.imgur.com/1E3cLRO.png"
+            url: "images/mario/piece.jpg"
         },
         {
             //Reading Railroad
-            name: "Marion",
+            name: "Banane",
             cost: 200,
             base_rent: 25,
             position: 5,
             type: "rr",
-            url: "images/mario/marion.jpg",
+            url: "images/mario/banane.jpg",
             color: "#8B4513",
         },
         {
             //Connecticut Avenue
-            name: "Baptiste",
+            name: "Birdo",
             cost: 120,
             upgrade: 50,
             position: 9,
@@ -70,7 +70,7 @@ module.exports = {
                 6, 30, 90, 270, 400, 550,
             ],
             type: "property",
-            url: "images/mario/baptiste.jpg",
+            url: "images/mario/birdo.jpg",
             color: "#9eeafb"
         },
         {
@@ -78,11 +78,11 @@ module.exports = {
             name: "Chance",
             position: 7,
             type: "chance",
-            url: "images/mario/chance.png"
+            url: "images/mario/star.jpg"
         },
         {
             //Vermont Avenue
-            name: "Victor",
+            name: "Koopa",
             cost: 100,
             upgrade: 50,
             position: 8,
@@ -91,12 +91,12 @@ module.exports = {
                 6, 30, 90, 270, 400, 550,
             ],
             type: "property",
-            url: "images/mario/victor.jpg",
+            url: "images/mario/koopa.jpg",
             color: "#9eeafb"
         },
         {
             //Oriental Ave
-            name: "Gauthier",
+            name: "Yoshi",
             cost: 100,
             upgrade: 50,
             position: 6,
@@ -105,18 +105,18 @@ module.exports = {
                 8, 40, 100, 300, 450, 600,
             ],
             type: "property",
-            url: "images/mario/gauthier.jpg",
+            url: "images/mario/yoshi.jpg",
             color: "#9eeafb"
         },
         {
             name: "Prison",
             position: 10,
             type: "jail",
-            url: "https://i.imgur.com/UjkDuYN.jpg"
+            url: "images/mario/encre.jpg"
         },
         {
             //St Charles Place
-            name: "Pierre",
+            name: "Diddy Kong",
             cost: 140,
             upgrade: 100,
             position: 11,
@@ -125,22 +125,22 @@ module.exports = {
                 10, 50, 150, 450, 625, 750,
             ],
             type: "property",
-            url: "images/mario/pierre.jpg",
+            url: "images/mario/diddykong.jpg",
             color: "#D13F9B",
         },
         {
             //Electric Company
-            name: "Romain",
+            name: "Topi Taupe",
             cost: 150,
             position: 12,
             group: "utility",
             type: "utility",
-            url: "images/mario/romain.jpg",
+            url: "images/mario/top.jpg",
             color: "#FBB677"
         },
         {
             //States Avenue
-            name: "Nasrédine",
+            name: "Funky Kong",
             cost: 140,
             upgrade: 100,
             position: 13,
@@ -149,12 +149,12 @@ module.exports = {
                 10, 50, 150, 450, 625, 750,
             ],
             type: "property",
-            url: "images/mario/nas.jpg",
+            url: "images/mario/funky.jpg",
             color: "#D13F9B",
         },
         {
             //Virginia Avenue
-            name: "Louis",
+            name: "Donkey Kong",
             cost: 160,
             upgrade: 100,
             position: 14,
@@ -163,22 +163,22 @@ module.exports = {
                 12, 60, 180, 500, 700, 900,
             ],
             type: "property",
-            url: "images/mario/louis.jpg",
+            url: "images/mario/donkeykong.jpg",
             color: "#D13F9B",
         },
         {
             //Pennsylvania Railroad
-            name: "Kelly",
+            name: "Carapace verte",
             cost: 200,
             base_rent: 25,
             position: 15,
             type: "rr",
-            url: "images/mario/kelly.jpg",
+            url: "images/mario/verte.jpg",
             color: "#8B4513",
         },
         {
             //Tennessee Avenue
-            name: "Lou-anne",
+            name: "Bébé Luigi",
             cost: 180,
             upgrade: 100,
             position: 18,
@@ -187,19 +187,19 @@ module.exports = {
                 14, 70, 200, 550, 750, 950,
             ],
             type: "property",
-            url: "images/mario/loulou.jpg",
+            url: "images/mario/bbluigi.jpg",
             color: "#FFA500",
         },
         {
             //Community Chest
-            name: "Caisse de Communauté",
+            name: "Khube",
             position: 17,
             type: "chest",
-            url: "images/mario/commu.png"
+            url: "images/mario/cube.jpg"
         },
         {
             //St James Place
-            name: "Alexis",
+            name: "Waluigi",
             cost: 180,
             upgrade: 100,
             position: 16,
@@ -208,12 +208,12 @@ module.exports = {
                 14, 70, 200, 550, 750, 950,
             ],
             type: "property",
-            url: "images/mario/alexis.jpg",
+            url: "images/mario/waluigi.jpg",
             color: "#FFA500",
         },
         {
             //New York Avenue
-            name: "Camélia",
+            name: "Luigi",
             cost: 200,
             upgrade: 100,
             position: 19,
@@ -222,7 +222,7 @@ module.exports = {
                 16, 80, 220, 600, 800, 1000,
             ],
             type: "property",
-            url: "images/mario/camelia.jpg",
+            url: "images/mario/luigi.jpg",
             color: "#FFA500",
         },
         {
@@ -230,11 +230,11 @@ module.exports = {
             name: "Parking",
             position: 20,
             type: "parking",
-            url: "images/mario/parking.png"
+            url: "images/mario/fleur.jpg"
         },
         {
             //Kentucky Avenue
-            name: "Margaux",
+            name: "Bébé Mario",
             cost: 220,
             upgrade: 150,
             position: 21,
@@ -243,7 +243,7 @@ module.exports = {
                 18, 90, 250, 700, 875, 1050,
             ],
             type: "property",
-            url: "images/mario/margaux.jpg",
+            url: "images/mario/bbmario.jpg",
             color: "#ff3f3f"
         },
         {
@@ -251,11 +251,11 @@ module.exports = {
             name: "Chance",
             position: 22,
             type: "chance",
-            url: "images/mario/chance.png"
+            url: "images/mario/star.jpg"
         },
         {
             //Indiana Avenue
-            name: "Céline",
+            name: "Wario",
             cost: 220,
             upgrade: 150,
             position: 23,
@@ -264,12 +264,12 @@ module.exports = {
                 18, 90, 250, 700, 875, 1050,
             ],
             type: "property",
-            url: "images/mario/celine.jpg",
+            url: "images/mario/wario.jpg",
             color: "#ff3f3f"
         },
         {
             //Illinois Avenue
-            name: "Manon M",
+            name: "Mario",
             cost: 240,
             upgrade: 150,
             position: 24,
@@ -278,22 +278,22 @@ module.exports = {
                 20, 100, 300, 750, 925, 1100,
             ],
             type: "property",
-            url: "images/mario/manonm.jpg",
+            url: "images/mario/mario.jpg",
             color: "#ff3f3f"
         },
         {
             //B&0 Railroad
-            name: "Léa",
+            name: "Carapace rouge",
             cost: 200,
             base_rent: 25,
             position: 25,
             type: "rr",
-            url: "images/mario/lea.jpg",
+            url: "images/mario/rouge.jpg",
             color: "#8B4513",
         },
         {
             //Ventnor Avenue
-            name: "Gillou",
+            name: "Harmonie",
             cost: 260,
             upgrade: 150,
             position: 27,
@@ -302,12 +302,12 @@ module.exports = {
                 22, 110, 330, 800, 975, 1150,
             ],
             type: "property",
-            url: "images/mario/gillou.jpg",
+            url: "images/mario/harmonie.jpg",
             color: "#fff852"
         },
         {
             //Marvin Gardens
-            name: "Poupe",
+            name: "Daisy",
             cost: 280,
             upgrade: 150,
             position: 29,
@@ -316,22 +316,22 @@ module.exports = {
                 22, 110, 330, 800, 975, 1150,
             ],
             type: "property",
-            url: "images/mario/poupe.jpg",
+            url: "images/mario/daisy.jpg",
             color: "#fff852"
         },
         {
             //Water Works
-            name: "Lucas Milas",
+            name: "Plante Piranha",
             cost: 150,
             position: 28,
             group: "utility",
             type: "utility",
-            url: "images/mario/milas.jpg",
+            url: "images/mario/plante.jpg",
             color: "#FBB677"
         },
         {
             //Atlantic Avenue
-            name: "Melissa",
+            name: "Peach",
             cost: 260,
             upgrade: 150,
             position: 26,
@@ -340,18 +340,18 @@ module.exports = {
                 24, 120, 360, 850, 1025, 1200,
             ],
             type: "property",
-            url: "http://melissa.inglart.free.fr/CV/photoID.jpg",
+            url: "images/mario/peach.jpg",
             color: "#fff852"
         },
         {
             name: "Tu vas en prison",
             position: 30,
             type: "go-to-jail",
-            url: "https://i.imgur.com/B4pTwgp.jpg"
+            url: "images/mario/boo.jpg"
         },
         {
             //Pacific Avenue
-            name: "Lucas Puig",
+            name: "Bowser junior",
             cost: 300,
             upgrade: 200,
             position: 31,
@@ -360,12 +360,12 @@ module.exports = {
                 26, 130, 390, 900, 1100, 1275,
             ],
             type: "property",
-            url: "images/mario/lucas.jpg",
+            url: "images/mario/bowserjr.jpg",
             color: "#008000",
         },
         {
             //North Carolina Avenue
-            name: "Hugo",
+            name: "Bowser skelet",
             cost: 300,
             upgrade: 200,
             position: 32,
@@ -374,19 +374,19 @@ module.exports = {
                 26, 130, 390, 900, 1100, 1275,
             ],
             type: "property",
-            url: "images/mario/hugo.jpg",
+            url: "images/mario/bowserskelet.jpg",
             color: "#008000",
         },
         {
             //Community Chest
-            name: "Caisse de Communauté",
+            name: "Khube",
             position: 33,
             type: "chest",
-            url: "images/mario/commu.png"
+            url: "images/mario/cube.jpg"
         },
         {
             //Pennsylvania Avenue
-            name: "Cassim",
+            name: "Bowser",
             cost: 320,
             upgrade: 200,
             position: 34,
@@ -395,17 +395,17 @@ module.exports = {
                 28, 150, 450, 1000, 1200, 1400,
             ],
             type: "property",
-            url: "images/mario/cassim.jpg",
+            url: "images/mario/bowser.jpg",
             color: "#008000",
         },
         {
             //Short Line
-            name: "Manon L",
+            name: "Carapace bleue",
             cost: 200,
             base_rent: 25,
             position: 35,
             type: "rr",
-            url: "images/mario/manon.jpg",
+            url: "images/mario/bleu.jpg",
             color: "#8B4513",
         },
         {
@@ -413,11 +413,11 @@ module.exports = {
             name: "Chance",
             position: 36,
             type: "chance",
-            url: "images/mario/chance.png"
+            url: "images/mario/star.jpg"
         },
         {
             //Park Place
-            name: "Béatrice",
+            name: "Toadette",
             cost: 350,
             upgrade: 200,
             position: 37,
@@ -426,7 +426,7 @@ module.exports = {
                 35, 175, 500, 1100, 1300, 1500,
             ],
             type: "property",
-            url: "images/mario/bea.jpg",
+            url: "images/mario/toadette.jpg",
             color: "#2148ff",
         },
         {
@@ -434,11 +434,11 @@ module.exports = {
             name: "Evasion de Taxe",
             position: 38,
             type: "lux-tax",
-            url: "https://i.imgur.com/332sOlL.jpg"
+            url: "images/mario/piece.jpg"
         },
         {
             //Boardwalk
-            name: "Rémi",
+            name: "Toad",
             cost: 400,
             upgrade: 200,
             position: 39,
@@ -447,7 +447,7 @@ module.exports = {
                 50, 200, 600, 1400, 1700, 2000,
             ],
             type: "property",
-            url: "images/mario/remi.jpg",
+            url: "images/mario/toad.jpg",
             color: "#2148ff",
         },
     ],
@@ -458,30 +458,30 @@ module.exports = {
             position: 0
         },
         {
-            name: "Va voir Camélia.",
+            name: "Va voir ce bg de Mario",
             type: "simple_move",
             position: 24
         },
         {
-            name: "Va voir Pierre, il fait un malaise..",
+            name: "Va voir DiddyKong",
             type: "simple_move",
             position: 11,
             //if you pass Go
         },
         {
-            name: "Rejoint Romain",
+            name: "Rejoint Topi",
             type: "nearest_utility",
             extra: "no_go",
             //either tesla or spacex
         },
         {
-            name: "Avancez à la prochaine bgette, si elle n'est pas prise, vous pouvez l'acheter !",
+            name: "Avancez à la prochaine carapace !",
             type: "nearest_rr",
         },
         {
-            name: "Ouverture de la Fata ! + $50.",
+            name: "Tu as réussi le circuit arc-en-ciel ! + $150.",
             type: "simple_bank_pay",
-            amount: 50,
+            amount: 150,
         },
         {
             name: "Reculez de 3 cases.",
@@ -490,38 +490,38 @@ module.exports = {
 
         },
         {
-            name: "Aller en prison",
+            name: "Aller en prison, vous ne savez pas conduire",
             type: "go_to_jail"
         },
         {
-            name: "Payez 15$ pour éviter une colle avec Soudan",
+            name: "Payez 15$ pour éviter une banane",
             type: "simple_bank_pay",
             amount: -15,
         },
         {
-            name: "Allez voir cette bgette de Marion",
+            name: "Allez admirer les fleurs de feu",
             type: "simple_move",
-            position: 5
+            position: 20
         },
         {
-            name: "Souveton à quelque chose à vous dire",
+            name: "SToad veut vous parler",
             type: "simple_move",
             position: 39
         },
         {
-            name: "Vous avez tricher aux formules trigos. Payez à tous $50.",
+            name: "Vous avez tricher en prenant un raccourci. Payez à tous $50.",
             type: "pay_all_players",
             amount: 50,
         },
         {
-            name: "Vous avez colle avec Brabant, + $150.",
+            name: "Vous avez pris une fusée, +$150",
             type: "simple_bank_pay",
             amount: 150,
         },
         {
-            name: "CHICKEN BURGER ! +$100",
+            name: "Bob-omb vous attendez... ! -$100",
             type: "simple_bank_pay",
-            amount: 100,
+            amount: -100,
         },
     ],
     chest: [
@@ -531,17 +531,17 @@ module.exports = {
             position: 0,
         },
         {
-            name: "Tu as réussi un exo de souveton, + $200",
+            name: "Tu as réussi à doubler Bowser, + $200",
             type: "simple_bank_pay",
             amount: 200,
         },
         {
-            name: "Tu dois payer la cantine... - $50",
+            name: "Tu as perdu la course de ballons, - $50",
             type: "simple_bank_pay",
             amount: -50,
         },
         {
-            name: "Tu as survécu une heure avec OCF, +$50",
+            name: "Tu as gagné le contre-la-montre, +$50",
             type: "simple_bank_pay",
             amount: 50,
         },
@@ -550,51 +550,51 @@ module.exports = {
         //     type: "chest"
         // },
         {
-            name: "Tu vas en prison ...",
+            name: "Tu es tombée dans le ravin...",
             type: "go_to_jail"
         },
         {
-            name: "Tu t'es endormi en Français... -$50.",
+            name: "Tu t'es endormi au volant... -$50.",
             type: "pay_all_players",
             amount: -50,
         },
         {
-            name: "Tu as réussi à tenir 2 h sans te faire prendre par Chemimi, +$100",
+            name: "Tu gagnes une nouvelle moto, +$100",
             type: "simple_bank_pay",
             amount: 100,
         },
         {
-            name: "Tu as survécu une heure avec Delcroix $20",
+            name: "Tu t'es pris une vache dans la prairie Meuh-meuh, -$20",
             type: "simple_bank_pay",
-            amount: 20,
+            amount: -20,
         },
         {
-            name: "C'est le Zinzin ! Voici $10",
+            name: "C'est le dernier tour et tu es en tête ! Voici $10",
             type: "simple_bank_pay",
             amount: 10,
         },
         {
-            name: "Tu as gérer avec Souveton, tu gagnes $100",
+            name: "Tu as doublé Mario, il s'est pris ta carapace, tu gagnes $100",
             type: "simple_bank_pay",
             amount: 100,
         },
         {
-            name: "Tu viens de rater ta colle ... -$100",
+            name: "Tu viens de te faire doubler ... -$100",
             type: "simple_bank_pay",
             amount: -100,
         },
         {
-            name: "Tu dois payer l'internat $150",
+            name: "Tu dois payer de nouveaux pneus, -$150",
             type: "simple_bank_pay",
             amount: -150,
         },
         {
-            name: "Tu reçois $25 pour avoir supporter Delcroix",
+            name: "Tu reçois $25 pour avoir attraper pleins de pièces",
             type: "simple_bank_pay",
             amount: 25,
         },
         {
-            name: "T'as de plus belles fesses que Melissa, tu gagnes $10",
+            name: "Tu as pecho Harmonie, tu gagnes $10",
             type: "simple_bank_pay",
             amount: 10,
         },

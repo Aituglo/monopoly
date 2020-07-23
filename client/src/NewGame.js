@@ -207,6 +207,9 @@ class NewGame extends Component {
                                 <option value="mp">MP</option>
                                 <option value="mario">Mario Kart</option>
                                 <option value="mpcouple">MP Couples</option>
+                                <option value="ecoles">Écoles</option>
+                                <option value="hdf">Haut de France</option>
+                                <option value="fromages">Fromages</option>
                                 <option value="hp">Harry Potter</option>
                             </select>
                             <small className="form-text text-muted align-self-start">Argent de départ</small>

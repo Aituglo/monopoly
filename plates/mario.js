@@ -9,7 +9,7 @@ module.exports = {
         },
         {
             //Mediterranean Avenue
-            name: "Toadette",
+            name: "Topi Taupe",
             cost: 60,
             upgrade: 50,
             position: 1,
@@ -18,7 +18,7 @@ module.exports = {
                 2, 10, 30, 90, 160, 250,
             ],
             type: "property",
-            url: "images/mario/toadette.jpg",
+            url: "images/mario/top.jpg",
             color: "#5E3C9F",
         },
         {
@@ -30,7 +30,7 @@ module.exports = {
         },
         {
             //Baltic Ave
-            name: "Toad",
+            name: "Goomba",
             cost: 60,
             upgrade: 50,
             position: 3,
@@ -39,7 +39,7 @@ module.exports = {
                 4, 20, 60, 180, 320, 450,
             ],
             type: "property",
-            url: "images/mario/toad.jpg",
+            url: "images/mario/goomba.jpg",
             color: "#5E3C9F",
         },
         {
@@ -130,12 +130,12 @@ module.exports = {
         },
         {
             //Electric Company
-            name: "Topi Taupe",
+            name: "Skelerex",
             cost: 150,
             position: 12,
             group: "utility",
             type: "utility",
-            url: "images/mario/top.jpg",
+            url: "images/mario/skelerex.jpg",
             color: "#FBB677"
         },
         {
